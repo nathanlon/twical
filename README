@@ -47,14 +47,14 @@ Simple Use Case
 A person, 'Alice' has a calendar event in a .ics file or at a URL.
 
 Alice signs up for Twical online at twical.net by entering her twitter user name @alice
-- We create a unique address for alice on twical using this username - www.twitcal.net/alice
+- We create a unique address for alice on twical using this username - www.twical.net/alice
 - We ask twitter to give permission for us to tweet on Alices behalf
 - If permitted we set up the default settings
 - Alice needs to tell us the URL of her web calendar if anything is to happen.
 - Now alice is set up
 
 Alice can return to her page to upload a .ics file or provide a web calendar URL.
-Uploaded events or those from the web calendar are tweeted by twitcal on behalf of @alice, 
+Uploaded events or those from the web calendar are tweeted by twical on behalf of @alice, 
 - By default we send the tweet 24 hours in advance, 1 hour in advance, and at the time of the event
 - By default we send the following tweet
   'Attending <meeting subject> <in 1 hour/24hours/now>, at <text value of location>, <see http://urltoeventpageshortened> #twical
@@ -64,7 +64,7 @@ Alice later decides she does not want this to continue, and returns to www.twica
 
 Alice later decides to delete her account by returning to www.twitcal.com and clicking 'delete account' and cofirming that she wants to delete it. 
 
-If Alice wants to re-enable twitcal she will need to set up a new account.
+If Alice wants to re-enable twical she will need to set up a new account.
 
 
 >>>>>>> 4cc1d650dcdbc53087eb6ee94f195fece0c38cba
