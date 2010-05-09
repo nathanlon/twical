@@ -82,4 +82,8 @@ class defaultActions extends sfActions {
 
   }
 
+  public function executeUserPage(sfWebRequest $request)
+  {
+      // where the user goes into their own page space
+  }
 }
