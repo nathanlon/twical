@@ -5,3 +5,9 @@
 <?php echo $test_token . " sdsdf";
 
 print_r($_SESSION); ?>
+
+<?php if ($loggedIn): ?>
+<div class="loggedIn">You are logged in</div>
+<?php else: ?>
+<div class="loggedIn"><?php echo link_to('Log in using Twitter', '@login') ?></div>
+<?php endif; ?>

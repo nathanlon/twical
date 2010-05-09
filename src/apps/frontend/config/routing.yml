@@ -5,6 +5,9 @@ authorised:
   url:   /authorised
   param: { module: default, action: loadData }
 
+login:
+  url:   /login
+  param: { module: default, action: login }
 
 load_data:
   url:   /load

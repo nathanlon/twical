@@ -4,7 +4,18 @@ class defaultActions extends sfActions {
   public function executeIndex(sfWebRequest $request)
   {
    $this->test_token =  $this->getUser()->getAttribute('oauth_token');
+   
+   $this->loggedIn = false;
+   if ($this->getUser()->isAuthenticated() == true)
+   {
+     $this->loggedIn = true;
+   }
 
+  }
+
+  public function executeLogin(sfWebRequest $request)
+  {
+    $this->forward('default', 'index');
   }
 
   public function executeLoadData(sfWebRequest $request)
