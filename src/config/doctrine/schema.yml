@@ -15,8 +15,6 @@ Person:
       local:  sf_guard_user_id
       foreign: id
       foreignAlias: Person
-      foreignType: one
-      type: one
 
 Event:
   actAs: { Timestampable: ~ }
