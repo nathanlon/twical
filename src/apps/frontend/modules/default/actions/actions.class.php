@@ -15,7 +15,10 @@ class defaultActions extends sfActions {
 
   public function executeLogin(sfWebRequest $request)
   {
-    $this->forward('default', 'index');
+    //Create a person mapping to sf_guard_user
+    
+
+    //$this->forward('default', 'index');
   }
 
   public function executeLoadData(sfWebRequest $request)
