@@ -8,22 +8,34 @@
  * @property integer $id
  * @property boolean $is_muted
  * @property string $twitter_token
+ * @property string $twitter_secret
+ * @property integer $twitter_userid
  * @property string $account_name
  * @property string $calendar_url
+ * @property integer $sf_guard_user_id
+ * @property Person $Person
  * @property Doctrine_Collection $Event
  * 
- * @method integer             getId()            Returns the current record's "id" value
- * @method boolean             getIsMuted()       Returns the current record's "is_muted" value
- * @method string              getTwitterToken()  Returns the current record's "twitter_token" value
- * @method string              getAccountName()   Returns the current record's "account_name" value
- * @method string              getCalendarUrl()   Returns the current record's "calendar_url" value
- * @method Doctrine_Collection getEvent()         Returns the current record's "Event" collection
- * @method Person              setId()            Sets the current record's "id" value
- * @method Person              setIsMuted()       Sets the current record's "is_muted" value
- * @method Person              setTwitterToken()  Sets the current record's "twitter_token" value
- * @method Person              setAccountName()   Sets the current record's "account_name" value
- * @method Person              setCalendarUrl()   Sets the current record's "calendar_url" value
- * @method Person              setEvent()         Sets the current record's "Event" collection
+ * @method integer             getId()               Returns the current record's "id" value
+ * @method boolean             getIsMuted()          Returns the current record's "is_muted" value
+ * @method string              getTwitterToken()     Returns the current record's "twitter_token" value
+ * @method string              getTwitterSecret()    Returns the current record's "twitter_secret" value
+ * @method integer             getTwitterUserid()    Returns the current record's "twitter_userid" value
+ * @method string              getAccountName()      Returns the current record's "account_name" value
+ * @method string              getCalendarUrl()      Returns the current record's "calendar_url" value
+ * @method integer             getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
+ * @method Person              getPerson()           Returns the current record's "Person" value
+ * @method Doctrine_Collection getEvent()            Returns the current record's "Event" collection
+ * @method Person              setId()               Sets the current record's "id" value
+ * @method Person              setIsMuted()          Sets the current record's "is_muted" value
+ * @method Person              setTwitterToken()     Sets the current record's "twitter_token" value
+ * @method Person              setTwitterSecret()    Sets the current record's "twitter_secret" value
+ * @method Person              setTwitterUserid()    Sets the current record's "twitter_userid" value
+ * @method Person              setAccountName()      Sets the current record's "account_name" value
+ * @method Person              setCalendarUrl()      Sets the current record's "calendar_url" value
+ * @method Person              setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
+ * @method Person              setPerson()           Sets the current record's "Person" value
+ * @method Person              setEvent()            Sets the current record's "Event" collection
  * 
  * @package    twical
  * @subpackage model
@@ -48,6 +60,13 @@ abstract class BasePerson extends sfDoctrineRecord
              'type' => 'string',
              'length' => 255,
              ));
+        $this->hasColumn('twitter_secret', 'string', 255, array(
+             'type' => 'string',
+             'length' => 255,
+             ));
+        $this->hasColumn('twitter_userid', 'integer', null, array(
+             'type' => 'integer',
+             ));
         $this->hasColumn('account_name', 'string', 20, array(
              'type' => 'string',
              'length' => 20,
@@ -56,11 +75,19 @@ abstract class BasePerson extends sfDoctrineRecord
              'type' => 'string',
              'length' => 1024,
              ));
+        $this->hasColumn('sf_guard_user_id', 'integer', null, array(
+             'type' => 'integer',
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('Person', array(
+             'local' => 'sf_guard_user_id',
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
+
         $this->hasMany('Event', array(
              'local' => 'id',
              'foreign' => 'person_id'));
