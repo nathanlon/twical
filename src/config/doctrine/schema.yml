@@ -32,6 +32,6 @@ Event:
   relations:
     Person:
       class: Person
-      local: person_id,
+      local: person_id
       foreign: id
       foreignAlias: Event
