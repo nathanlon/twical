@@ -23,40 +23,25 @@ class defaultActions extends sfActions {
    */
   public function executeTwitterCallback(sfWebRequest $request)
   {
-
     $user = $this->getUser();
 
-    echo "<br />Check for AUTH";
     if ($user->isAuthenticated() == true)
     {
-      echo "AUTHENTICATED SESSION";
-      //create the person against the user.
-      echo "<pre>";
-      print_r($_SESSION);
-      echo "</pre>";
 
       $guardUser = $user->getGuardUser();
       $guardUserId = $guardUser->getId();
 
-
-      echo "GUARD USER = $guardUserId";
-
       $token = $user->getAttribute('sfTwitterAuth_oauth_access_token');
       $secret = $user->getAttribute('sfTwitterAuth_oauth_access_token_secret');
-      echo "TOKEN = ".$token;
 
       $person = new Person();
       $person->setSfGuardUserId($guardUserId);
       $person->setTwitterToken($token);
       $person->setTwitterSecret($secret);
-      //$person->setTwitterSecret()
-      //no save.
       $person->save();
 
       $this->redirect('default/secureHome');
-
     }
-
   }
 
   /**
@@ -72,17 +57,9 @@ class defaultActions extends sfActions {
 
   public function executeSecureHome(sfWebRequest $request)
   {
-        echo "CHECK AUTH";
     //Create a person mapping to sf_guard_user
     if ($this->getUser()->isAuthenticated() == true)
     {
-      echo "AUTHENTICATED SESSION";
-
-      print_r($_SESSION);
-
-
-      echo " GUARD USER IS ".$guardUserId;
-
       if ($request->isMethod(sfWebRequest::POST))
       {
         //create the person against the user.
@@ -92,18 +69,6 @@ class defaultActions extends sfActions {
       }
     }
 
-    /*
-    //get the cookie
-    $token = $request->getCookie('oauth_token','123');
-
-    $q = Doctrine_Query::create()
-    ->from('Person p')
-    ->where('p.twitter_token = ?', $token);
-
-    $person = $q->execute();
-    */
-    //get the calendar items against this 
-    
   }
 
 }

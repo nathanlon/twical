@@ -2,10 +2,6 @@
 
 <div>TwiCal allows you receive reminders via twitter for upcoming events in your Google Calendar</div>
 
-<?php echo $test_token . " sdsdf";
-
-print_r($_SESSION); ?>
-
 <?php if ($loggedIn): ?>
 <div class="loggedIn">You are logged in</div>
 <?php else: ?>
