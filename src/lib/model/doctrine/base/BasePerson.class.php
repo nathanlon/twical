@@ -16,6 +16,7 @@
  * @property Person $Person
  * @property Doctrine_Collection $Event
  * 
+<<<<<<< HEAD:src/lib/model/doctrine/base/BasePerson.class.php
  * @method integer             getId()               Returns the current record's "id" value
  * @method boolean             getIsMuted()          Returns the current record's "is_muted" value
  * @method string              getTwitterToken()     Returns the current record's "twitter_token" value
@@ -36,6 +37,24 @@
  * @method Person              setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
  * @method Person              setPerson()           Sets the current record's "Person" value
  * @method Person              setEvent()            Sets the current record's "Event" collection
+=======
+ * @method integer             getId()             Returns the current record's "id" value
+ * @method boolean             getIsMuted()        Returns the current record's "is_muted" value
+ * @method string              getTwitterToken()   Returns the current record's "twitter_token" value
+ * @method string              getTwitterSecret()  Returns the current record's "twitter_secret" value
+ * @method integer             getTwitterUserid()  Returns the current record's "twitter_userid" value
+ * @method string              getAccountName()    Returns the current record's "account_name" value
+ * @method string              getCalendarUrl()    Returns the current record's "calendar_url" value
+ * @method Doctrine_Collection getEvent()          Returns the current record's "Event" collection
+ * @method Person              setId()             Sets the current record's "id" value
+ * @method Person              setIsMuted()        Sets the current record's "is_muted" value
+ * @method Person              setTwitterToken()   Sets the current record's "twitter_token" value
+ * @method Person              setTwitterSecret()  Sets the current record's "twitter_secret" value
+ * @method Person              setTwitterUserid()  Sets the current record's "twitter_userid" value
+ * @method Person              setAccountName()    Sets the current record's "account_name" value
+ * @method Person              setCalendarUrl()    Sets the current record's "calendar_url" value
+ * @method Person              setEvent()          Sets the current record's "Event" collection
+>>>>>>> 9741e008bd5454ce8114a407c2a5a66767074a76:src/lib/model/doctrine/base/BasePerson.class.php
  * 
  * @package    twical
  * @subpackage model

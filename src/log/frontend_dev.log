@@ -1,4 +1,42 @@
 <<<<<<< HEAD
+May 09 03:55:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 03:55:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 03:55:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 03:55:44 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 03:55:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 03:55:44 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 03:55:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 03:55:44 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 03:55:44 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 03:55:44 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 09 03:55:44 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 09 03:55:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 03:55:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 03:55:44 symfony [info] {sfWebDebugLogger} Configuration 93.37 ms (10)
+May 09 03:55:44 symfony [info] {sfWebDebugLogger} Factories 193.57 ms (1)
+May 09 03:55:44 symfony [info] {sfWebDebugLogger} Action "default/index" 0.21 ms (1)
+May 09 03:55:44 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 41.48 ms (1)
+May 09 03:55:44 symfony [info] {sfWebResponse} Send content (29500 o)
+May 09 03:56:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 03:56:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 03:56:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 03:56:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 03:56:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 03:56:07 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 03:56:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 03:56:07 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 03:56:07 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 03:56:07 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 09 03:56:07 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 09 03:56:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 03:56:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 03:56:07 symfony [info] {sfWebDebugLogger} Configuration 1.95 ms (9)
+May 09 03:56:07 symfony [info] {sfWebDebugLogger} Factories 13.06 ms (1)
+May 09 03:56:07 symfony [info] {sfWebDebugLogger} Action "default/index" 0.23 ms (1)
+May 09 03:56:07 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 5.71 ms (1)
+May 09 03:56:07 symfony [info] {sfWebResponse} Send content (29494 o)
+=======
+<<<<<<< HEAD
 May 08 22:47:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
 May 08 22:47:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
 May 08 22:47:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
@@ -732,6 +770,7 @@ May 09 06:39:46 symfony [info] {sfWebDebugLogger} Factories 108.59 ms (1)
 May 09 06:39:46 symfony [info] {sfWebDebugLogger} Action "default/index" 0.30 ms (1)
 May 09 06:39:46 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.13 ms (1)
 May 09 06:39:46 symfony [info] {sfWebResponse} Send content (31001 o)
+<<<<<<< HEAD:src/log/frontend_dev.log
 May 09 06:42:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
 May 09 06:42:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
 May 09 06:42:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
@@ -2153,3 +2192,6 @@ May 09 08:12:47 symfony [info] {sfWebDebugLogger} Factories 29.64 ms (1)
 May 09 08:12:47 symfony [info] {sfWebDebugLogger} Action "default/index" 0.30 ms (1)
 May 09 08:12:47 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 5.71 ms (1)
 May 09 08:12:47 symfony [info] {sfWebResponse} Send content (30231 o)
+=======
+>>>>>>> d7e3ff0cd8d614ad48129fe837b10e08be6b237a
+>>>>>>> 9741e008bd5454ce8114a407c2a5a66767074a76:src/log/frontend_dev.log

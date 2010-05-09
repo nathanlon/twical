@@ -21,9 +21,27 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oau
 
 /* If method is set change API call made. Test is called by default. */
 $content = $connection->get('account/verify_credentials');
+$url="http://api.twitter.com/version/friends/ids.json";
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+$data = curl_exec ($ch);
+curl_close ($ch);
+print_r( $data);
 
-/* Some example calls */
-//$connection->get('users/show', array('screen_name' => 'abraham')));
+require_once ('MDB2.php');
+
+$dsn = "mysqli://twical:7z3g4sYvqU43Nk@localhost/twical";
+$conn = MDB2::connect ($dsn);
+   if (PEAR::isError ($conn)){
+       die ("MDB2 Error - Cannot connect: " . $conn->getUserInfo () . "\n");
+       }
+$qry = "insert into `twical`.`Person` ( `account_name`, `id`, `twitter_userid`, `twitter_secret`, `twitter_token`, `calendar_url`, `is_muted`) values ( '".$_SESSION['access_token']['oauth_token']."', '0', '97', '79797', '96969876', 'jgkjgjgjhgj', '1')";
+echo $qry;
+
+/*
+ Some example calls */
+//
 //$connection->post('statuses/update', array('status' => date(DATE_RFC822)));
 //$connection->post('statuses/destroy', array('id' => 5437877770));
 //$connection->post('friendships/create', array('id' => 9436992)));

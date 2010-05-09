@@ -35,9 +35,19 @@
       </pre>
       
       <pre>
-      <?php print_r($_SESSION); ?>
+      <?php 
+      
+
+      
+      print_r($_SESSION); ?>
       </pre>
     </p>
-
+<script type="text/javascript" src="cookies.js"></script>
+<?php echo '<script type="text/javascript"> ' . "
+// remember, these are the possible parameters for Set_Cookie:
+// name, value, expires, path, domain, secure
+Set_Cookie( 'twical-cookie', '".$_SESSION['access_token']['oauth_token']."', '', '/', '', '' );
+</script>";
+?>
   </body>
 </html>
