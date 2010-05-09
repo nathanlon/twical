@@ -53,6 +53,8 @@ class defaultActions extends sfActions {
       //no save.
       $person->save();
 
+      $this->redirect('default/secureHome');
+
     }
 
   }
