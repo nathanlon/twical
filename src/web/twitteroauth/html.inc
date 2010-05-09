@@ -23,24 +23,15 @@
       </p>
       <hr />
       <?php if (isset($menu)) { ?>
-        <?php echo $menu; ?>
+        <?php // echo $menu; ?>
       <?php } ?>
     </div>
     <?php if (isset($status_text)) { ?>
       <?php echo '<h3>'.$status_text.'</h3>'; ?>
     <?php } ?>
     <p>
-      <pre>
-        <?php print_r($content); ?>
-      </pre>
-      
-      <pre>
-      <?php 
-      
 
-      
-      print_r($_SESSION); ?>
-      </pre>
+
     </p>
 <script type="text/javascript" src="cookies.js"></script>
 <?php echo '<script type="text/javascript"> ' . "

@@ -26,11 +26,11 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_USERPWD, "bandfreakshow:sp1ritbit");
-curl_setopt($ch, CURLOPT_POSTFIELDS, "status=event is no here at ...");
+curl_setopt($ch, CURLOPT_POSTFIELDS, "status=WarbleCamp at The Guardian offices #twical");
 curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec ($ch);
 curl_close ($ch);
-print_r( $data);
+//print_r( $data);
 
 require_once ('MDB2.php');
 
