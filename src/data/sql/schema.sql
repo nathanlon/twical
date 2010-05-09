@@ -1,5 +1,5 @@
 CREATE TABLE event (id INT AUTO_INCREMENT, name VARCHAR(70), description TEXT, location VARCHAR(200), latitude FLOAT(18, 2), longitude FLOAT(18, 2), url VARCHAR(255), start_time DATETIME NOT NULL, end_time DATETIME NOT NULL, person_id INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX person_id_idx (person_id), PRIMARY KEY(id)) ENGINE = INNODB;
-CREATE TABLE person (id INT AUTO_INCREMENT, is_muted TINYINT(1) DEFAULT '0', twitter_token VARCHAR(255), twitter_secret VARCHAR(255), twitter_userid BIGINT, account_name VARCHAR(20), calendar_url TEXT, sf_guard_user_id INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX sf_guard_user_id_idx (sf_guard_user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE person (id INT AUTO_INCREMENT, is_muted TINYINT(1) DEFAULT '0', twitter_token VARCHAR(255), twitter_secret VARCHAR(255), twitter_userid BIGINT, account_name VARCHAR(20), calendar_url TEXT, sf_guard_user_id INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE sf_guard_group (id INT AUTO_INCREMENT, name VARCHAR(255) UNIQUE, description TEXT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE sf_guard_group_permission (group_id INT, permission_id INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(group_id, permission_id)) ENGINE = INNODB;
 CREATE TABLE sf_guard_permission (id INT AUTO_INCREMENT, name VARCHAR(255) UNIQUE, description TEXT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
@@ -8,7 +8,6 @@ CREATE TABLE sf_guard_user (id INT AUTO_INCREMENT, username VARCHAR(128) NOT NUL
 CREATE TABLE sf_guard_user_group (user_id INT, group_id INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(user_id, group_id)) ENGINE = INNODB;
 CREATE TABLE sf_guard_user_permission (user_id INT, permission_id INT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(user_id, permission_id)) ENGINE = INNODB;
 ALTER TABLE event ADD CONSTRAINT event_person_id_person_id FOREIGN KEY (person_id) REFERENCES person(id);
-ALTER TABLE person ADD CONSTRAINT person_sf_guard_user_id_sf_guard_user_id FOREIGN KEY (sf_guard_user_id) REFERENCES sf_guard_user(id);
 ALTER TABLE sf_guard_group_permission ADD CONSTRAINT sf_guard_group_permission_permission_id_sf_guard_permission_id FOREIGN KEY (permission_id) REFERENCES sf_guard_permission(id) ON DELETE CASCADE;
 ALTER TABLE sf_guard_group_permission ADD CONSTRAINT sf_guard_group_permission_group_id_sf_guard_group_id FOREIGN KEY (group_id) REFERENCES sf_guard_group(id) ON DELETE CASCADE;
 ALTER TABLE sf_guard_remember_key ADD CONSTRAINT sf_guard_remember_key_user_id_sf_guard_user_id FOREIGN KEY (user_id) REFERENCES sf_guard_user(id) ON DELETE CASCADE;
