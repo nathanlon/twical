@@ -10,7 +10,13 @@ Person:
     calendar_url:       { type: string(1024) }
     sf_guard_user_id:   { type: integer }
   relations:
-    sfGuardUser:  { onDelete: CASCADE, local: sf_guard_user_id, foreign: id }
+    sfGuardUser:
+      class:  sfGuardUser
+      local:  sf_guard_user_id
+      foreign: id
+      foreignAlias: Person
+      foreignType: one
+      type: one
 
 Event:
   actAs: { Timestampable: ~ }
@@ -26,4 +32,8 @@ Event:
     end_time:                  { type: timestamp, notnull: true }
     person_id:                 { type: integer }
   relations:
-    Person:  { onDelete: CASCADE, local: person_id, foreign: id }
+    Person:
+      class: Person
+      local: person_id,
+      foreign: id
+      foreignAlias: Event
