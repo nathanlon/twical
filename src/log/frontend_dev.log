@@ -732,3 +732,57 @@ May 09 06:39:46 symfony [info] {sfWebDebugLogger} Factories 108.59 ms (1)
 May 09 06:39:46 symfony [info] {sfWebDebugLogger} Action "default/index" 0.30 ms (1)
 May 09 06:39:46 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.13 ms (1)
 May 09 06:39:46 symfony [info] {sfWebResponse} Send content (31001 o)
+May 09 06:42:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 06:42:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 06:42:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 06:42:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 06:42:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 06:42:04 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 06:42:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 06:42:04 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 06:42:04 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 06:42:04 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:42:04 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:42:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 06:42:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 06:42:04 symfony [info] {sfWebDebugLogger} Configuration 229.31 ms (9)
+May 09 06:42:04 symfony [info] {sfWebDebugLogger} Factories 144.45 ms (1)
+May 09 06:42:04 symfony [info] {sfWebDebugLogger} Action "default/index" 0.30 ms (1)
+May 09 06:42:04 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 13.81 ms (1)
+May 09 06:42:04 symfony [info] {sfWebResponse} Send content (30320 o)
+May 09 06:42:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 06:42:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 06:42:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 06:42:08 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 06:42:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 06:42:08 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 06:42:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 06:42:08 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 06:42:08 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 06:42:08 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:42:08 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:42:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 06:42:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 06:42:08 symfony [info] {sfWebDebugLogger} Configuration 3.33 ms (9)
+May 09 06:42:08 symfony [info] {sfWebDebugLogger} Factories 14.29 ms (1)
+May 09 06:42:08 symfony [info] {sfWebDebugLogger} Action "default/index" 0.27 ms (1)
+May 09 06:42:08 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 5.08 ms (1)
+May 09 06:42:08 symfony [info] {sfWebResponse} Send content (30314 o)
+May 09 06:43:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 06:43:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 06:43:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 06:43:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 06:43:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 06:43:13 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 06:43:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 06:43:13 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 06:43:13 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 06:43:13 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:43:13 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:43:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 06:43:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 06:43:13 symfony [info] {sfWebDebugLogger} Configuration 2.73 ms (9)
+May 09 06:43:13 symfony [info] {sfWebDebugLogger} Factories 13.66 ms (1)
+May 09 06:43:13 symfony [info] {sfWebDebugLogger} Action "default/index" 0.41 ms (1)
+May 09 06:43:13 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 6.95 ms (1)
+May 09 06:43:13 symfony [info] {sfWebResponse} Send content (30315 o)
