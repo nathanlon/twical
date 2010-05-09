@@ -43,7 +43,7 @@ class sfTwitterAuthActions extends sfActions
 
         /* Build the authorization URL */
         $request_link = $to->getAuthorizeURL($token);
-//        return $this->redirect($request_link);
+        return $this->redirect($request_link);
         break;
       case 'returned':
         /* If the access tokens are already set skip to the API call */
@@ -92,7 +92,7 @@ class sfTwitterAuthActions extends sfActions
           {
             $after = "@homepage";
           }
-//          return $this->redirect($after);
+          return $this->redirect($after);
         }
         else
         {
@@ -101,7 +101,7 @@ class sfTwitterAuthActions extends sfActions
           $user->setAttribute('sfTwitterAuth_oauth_state', null);
           $user->setAttribute('sfTwitterAuth_oauth_access_token', null);
           $user->setAttribute('sfTwitterAuth_oauth_access_token_secret', null);
-   //       $this->redirect('sfTwitterAuth/failed');
+          $this->redirect('sfTwitterAuth/failed');
         }
         break;
     }
