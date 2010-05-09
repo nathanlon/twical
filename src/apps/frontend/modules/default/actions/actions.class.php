@@ -42,8 +42,6 @@ class defaultActions extends sfActions {
 
       $personArray = $q->execute();
 
-      print_r($personArray);
-
       if (count($personArray) === 0)
       {
         $person = new Person();
