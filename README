@@ -10,7 +10,8 @@ TwiCal
 
 Built at WarbleCamp 2010 @warblecamp
 
-Developers: @nuxnix @ketan @nathanlon @johnxcom 
+Development: @ketan @nathanlon @johnxcom
+Encouragement: @nuxnix @farhan
 
 Initial Challenge
 -----------------
@@ -50,7 +51,7 @@ Alice signs up for Twical online at twical.net by entering her twitter user name
 - We create a unique address for alice on twical using this username - www.twical.net/alice
 - We ask twitter to give permission for us to tweet on Alices behalf
 - If permitted we set up the default settings
-- Alice needs to tell us the URL of her web calendar if anything is to happen.
+- Alice needs to tell us the URL of her web calendar if anything more is to happen.
 - Now alice is set up
 
 Alice can return to her page to upload a .ics file or provide a web calendar URL.
@@ -62,7 +63,7 @@ Uploaded events or those from the web calendar are tweeted by twical on behalf o
 
 Alice later decides she does not want this to continue, and returns to www.twical/alice and sets her account to mute. No more tweets will come from twitcal until Alice unmutes her account.
 
-Alice later decides to delete her account by returning to www.twitcal.com and clicking 'delete account' and cofirming that she wants to delete it. 
+Alice later decides to delete her account by returning to www.twical.com and clicking 'delete account' and cofirming that she wants to delete it. 
 
 If Alice wants to re-enable twical she will need to set up a new account.
 
