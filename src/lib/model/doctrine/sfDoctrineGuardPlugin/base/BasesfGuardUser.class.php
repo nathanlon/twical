@@ -18,6 +18,7 @@
  * @property Doctrine_Collection $sfGuardUserPermission
  * @property Doctrine_Collection $sfGuardUserGroup
  * @property sfGuardRememberKey $RememberKeys
+ * @property Doctrine_Collection $Person
  * 
  * @method integer             getId()                    Returns the current record's "id" value
  * @method string              getUsername()              Returns the current record's "username" value
@@ -32,6 +33,7 @@
  * @method Doctrine_Collection getSfGuardUserPermission() Returns the current record's "sfGuardUserPermission" collection
  * @method Doctrine_Collection getSfGuardUserGroup()      Returns the current record's "sfGuardUserGroup" collection
  * @method sfGuardRememberKey  getRememberKeys()          Returns the current record's "RememberKeys" value
+ * @method Doctrine_Collection getPerson()                Returns the current record's "Person" collection
  * @method sfGuardUser         setId()                    Sets the current record's "id" value
  * @method sfGuardUser         setUsername()              Sets the current record's "username" value
  * @method sfGuardUser         setAlgorithm()             Sets the current record's "algorithm" value
@@ -45,6 +47,7 @@
  * @method sfGuardUser         setSfGuardUserPermission() Sets the current record's "sfGuardUserPermission" collection
  * @method sfGuardUser         setSfGuardUserGroup()      Sets the current record's "sfGuardUserGroup" collection
  * @method sfGuardUser         setRememberKeys()          Sets the current record's "RememberKeys" value
+ * @method sfGuardUser         setPerson()                Sets the current record's "Person" collection
  * 
  * @package    twical
  * @subpackage model
@@ -127,6 +130,10 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
         $this->hasOne('sfGuardRememberKey as RememberKeys', array(
              'local' => 'id',
              'foreign' => 'user_id'));
+
+        $this->hasMany('Person', array(
+             'local' => 'id',
+             'foreign' => 'sf_guard_user_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable(array(
              ));

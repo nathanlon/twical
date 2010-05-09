@@ -31,8 +31,9 @@ class defaultActions extends sfActions {
     {
       echo "AUTHENTICATED SESSION";
       //create the person against the user.
-
+      echo "<pre>";
       print_r($_SESSION);
+      echo "</pre>";
 
       $guardUser = $user->getGuardUser();
       $guardUserId = $guardUser->getId();
@@ -40,19 +41,17 @@ class defaultActions extends sfActions {
 
       echo "GUARD USER = $guardUserId";
 
-      $token = $user->getAttribute('sfTwitterAuth_oauth_request_token');
-      
+      $token = $user->getAttribute('sfTwitterAuth_oauth_access_token');
+      $secret = $user->getAttribute('sfTwitterAuth_oauth_access_token_secret');
       echo "TOKEN = ".$token;
 
       $person = new Person();
       $person->setSfGuardUserId($guardUserId);
       $person->setTwitterToken($token);
+      $person->setTwitterSecret($secret);
       //$person->setTwitterSecret()
       //no save.
       $person->save();
-
-
-
 
     }
 
