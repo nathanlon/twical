@@ -1,0 +1,38 @@
+body {
+	
+	background-color: #DDEEF6;
+}
+h1 {
+	text-align: center;
+}
+h1 span {
+	font-size: 0.5em;
+}
+
+#introbox {
+border: 1px solid navy;
+	-moz-border-radius: 7px;
+	width:  600px;
+	background-color: #DBFFFF;
+	padding: 5px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.twitterlogin {
+	display: block;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+
+.loggedIn {
+	background-image: ('../images/Green-tick1.png');
+	background-position: 0 0;
+	padding-left: 50px;
+}
