@@ -40,9 +40,9 @@ class defaultActions extends sfActions {
         ->from('Person p')
         ->where('p.sf_guard_user_id = ?', $guardUserId);
 
-      $personArray = $q->execute();
+      $person = $q->fetchOne();
 
-      if (count($personArray) === 0)
+      if (is_null($person))
       {
         $person = new Person();
         $person->setSfGuardUserId($guardUserId);
