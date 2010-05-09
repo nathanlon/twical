@@ -1,3 +1,422 @@
+<<<<<<< HEAD
+May 08 22:47:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:47:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:47:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:47:02 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:47:02 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:47:02 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:47:02 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:47:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:47:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:47:02 symfony [info] {sfWebDebugLogger} Configuration 83.60 ms (10)
+May 08 22:47:02 symfony [info] {sfWebDebugLogger} Factories 105.63 ms (1)
+May 08 22:47:02 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+May 08 22:47:02 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 65.08 ms (1)
+May 08 22:47:02 symfony [info] {sfWebResponse} Send content (27299 o)
+May 08 22:53:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:53:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:53:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:53:29 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:53:29 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:53:29 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:53:29 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:53:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:53:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:53:29 symfony [info] {sfWebDebugLogger} Configuration 1.80 ms (9)
+May 08 22:53:29 symfony [info] {sfWebDebugLogger} Factories 26.44 ms (1)
+May 08 22:53:29 symfony [info] {sfWebDebugLogger} Action "default/index" 0.19 ms (1)
+May 08 22:53:29 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 7.00 ms (1)
+May 08 22:53:29 symfony [info] {sfWebResponse} Send content (27260 o)
+May 08 22:53:31 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:53:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:53:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:53:31 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:53:31 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:53:31 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:53:31 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:53:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:53:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:53:31 symfony [info] {sfWebDebugLogger} Configuration 3.80 ms (9)
+May 08 22:53:31 symfony [info] {sfWebDebugLogger} Factories 9.53 ms (1)
+May 08 22:53:31 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+May 08 22:53:31 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 5.58 ms (1)
+May 08 22:53:31 symfony [info] {sfWebResponse} Send content (27292 o)
+May 08 22:53:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:53:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:53:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:53:36 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:53:36 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:53:36 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:53:36 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:53:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:53:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:53:36 symfony [info] {sfWebDebugLogger} Configuration 1.94 ms (9)
+May 08 22:53:36 symfony [info] {sfWebDebugLogger} Factories 7.14 ms (1)
+May 08 22:53:36 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+May 08 22:53:36 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 3.89 ms (1)
+May 08 22:53:36 symfony [info] {sfWebResponse} Send content (27259 o)
+May 08 22:56:25 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:56:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:56:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:56:25 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:56:25 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:56:25 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:56:25 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:56:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:56:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:56:25 symfony [info] {sfWebDebugLogger} Configuration 1.73 ms (9)
+May 08 22:56:25 symfony [info] {sfWebDebugLogger} Factories 21.97 ms (1)
+May 08 22:56:25 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+May 08 22:56:25 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 5.63 ms (1)
+May 08 22:56:25 symfony [info] {sfWebResponse} Send content (27260 o)
+May 08 22:56:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:56:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:56:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:56:28 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:56:28 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:56:28 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:56:28 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:56:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:56:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:56:28 symfony [info] {sfWebDebugLogger} Configuration 1.67 ms (9)
+May 08 22:56:28 symfony [info] {sfWebDebugLogger} Factories 10.11 ms (1)
+May 08 22:56:28 symfony [info] {sfWebDebugLogger} Action "default/index" 1.48 ms (1)
+May 08 22:56:28 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 6.56 ms (1)
+May 08 22:56:28 symfony [info] {sfWebResponse} Send content (27293 o)
+May 08 22:58:27 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:58:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:58:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:58:27 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:58:27 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:58:27 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:58:27 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:58:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:58:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:58:27 symfony [info] {sfWebDebugLogger} Configuration 1.73 ms (9)
+May 08 22:58:27 symfony [info] {sfWebDebugLogger} Factories 25.72 ms (1)
+May 08 22:58:27 symfony [info] {sfWebDebugLogger} Action "default/index" 0.18 ms (1)
+May 08 22:58:27 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.56 ms (1)
+May 08 22:58:27 symfony [info] {sfWebResponse} Send content (27294 o)
+May 08 22:59:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 22:59:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 22:59:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 22:59:14 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 22:59:14 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 22:59:14 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:59:14 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 22:59:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 22:59:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 22:59:14 symfony [info] {sfWebDebugLogger} Configuration 1.83 ms (9)
+May 08 22:59:14 symfony [info] {sfWebDebugLogger} Factories 21.38 ms (1)
+May 08 22:59:14 symfony [info] {sfWebDebugLogger} Action "default/index" 0.19 ms (1)
+May 08 22:59:14 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.56 ms (1)
+May 08 22:59:14 symfony [info] {sfWebResponse} Send content (27294 o)
+May 08 23:03:59 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'acount',  'action' => 'connect',)
+May 08 23:03:59 symfony [info] {sfFrontWebController} Action "acount/connect" does not exist
+May 08 23:03:59 symfony [err] {sfError404Exception} Action "acount/connect" does not exist.
+May 08 23:03:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+May 08 23:03:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:03:59 symfony [info] {sfWebDebugLogger} Configuration 62.68 ms (6)
+May 08 23:03:59 symfony [info] {sfWebDebugLogger} Factories 73.76 ms (1)
+May 08 23:04:15 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:04:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:04:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:04:15 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:04:15 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 11 (A session had already been started - ignoring session_start())
+May 08 23:04:15 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 15 (Undefined index: oauth_status)
+May 08 23:04:15 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:04:15 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:04:54 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:04:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:04:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:04:54 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:04:54 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 14 (Undefined index: oauth_status)
+May 08 23:04:54 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 22 (Undefined variable: consumer_key)
+May 08 23:04:54 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 22 (Undefined variable: consumer_secret)
+May 08 23:05:32 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:05:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:05:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:05:32 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:05:32 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 22 (Undefined variable: consumer_key)
+May 08 23:05:32 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 22 (Undefined variable: consumer_secret)
+May 08 23:05:57 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:05:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:05:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:05:57 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:05:57 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 22 (Undefined variable: consumer_key)
+May 08 23:05:57 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 22 (Undefined variable: consumer_secret)
+May 08 23:12:28 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:12:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:12:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:12:28 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:12:28 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 11 (A session had already been started - ignoring session_start())
+May 08 23:12:28 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 12 (require_once(twitteroauth/twitteroauth.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory)
+May 08 23:12:44 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:12:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:12:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:12:44 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:12:44 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 12 (require_once(twitteroauth/twitteroauth.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory)
+May 08 23:13:19 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:13:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:13:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:13:19 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:13:19 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 12 (require_once(twitteroauth.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory)
+May 08 23:13:36 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:13:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:13:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:13:36 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:13:36 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 15 (Undefined index: oauth_status)
+May 08 23:13:36 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:13:36 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:18:44 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:18:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:18:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:18:44 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:18:59 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:18:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:18:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:18:59 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:18:59 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:18:59 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:21:27 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:22:18 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:22:20 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:23:04 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:23:33 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:24:03 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:24:11 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:24:57 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:24:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:24:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:24:57 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:24:57 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:24:57 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:26:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 23:26:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:26:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:26:06 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 23:26:06 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 23:26:06 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:26:06 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:26:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:26:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:26:06 symfony [info] {sfWebDebugLogger} Configuration 18.64 ms (10)
+May 08 23:26:06 symfony [info] {sfWebDebugLogger} Factories 8.45 ms (1)
+May 08 23:26:06 symfony [info] {sfWebDebugLogger} Action "default/index" 0.24 ms (1)
+May 08 23:26:06 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 10.04 ms (1)
+May 08 23:26:06 symfony [info] {sfWebResponse} Send content (27477 o)
+May 08 23:28:12 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 08 23:28:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:28:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:28:12 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 08 23:28:12 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 08 23:28:12 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:28:12 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:28:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:28:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:28:12 symfony [info] {sfWebDebugLogger} Configuration 2.01 ms (9)
+May 08 23:28:12 symfony [info] {sfWebDebugLogger} Factories 6.50 ms (1)
+May 08 23:28:12 symfony [info] {sfWebDebugLogger} Action "default/index" 0.20 ms (1)
+May 08 23:28:12 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 5.92 ms (1)
+May 08 23:28:12 symfony [info] {sfWebResponse} Send content (27473 o)
+May 08 23:28:23 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:28:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:28:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:28:23 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:28:23 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:28:23 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:29:32 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:29:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:29:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:29:32 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:33:58 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:33:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:33:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:33:58 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:34:31 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:34:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:34:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:34:31 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:34:33 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/stereoket-twitteroauth-bf22e12/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:34:33 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/stereoket-twitteroauth-bf22e12/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:34:33 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 32 (Undefined index: oauth_token)
+May 08 23:34:33 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 35 (Undefined index: oauth_token_secret)
+May 08 23:34:33 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:34:33 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:34:33 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:34:33 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:34:33 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/stereoket-twitteroauth-bf22e12/twitteroauth/twitteroauth.php:64))
+May 08 23:34:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:34:33 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/stereoket-twitteroauth-bf22e12/twitteroauth/twitteroauth.php:64))
+May 08 23:34:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:34:33 symfony [info] {sfWebDebugLogger} Configuration 10.59 ms (10)
+May 08 23:34:33 symfony [info] {sfWebDebugLogger} Factories 6.34 ms (1)
+May 08 23:34:33 symfony [info] {sfWebDebugLogger} Action "account/connect" 1247.67 ms (1)
+May 08 23:34:33 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 16.10 ms (1)
+May 08 23:34:33 symfony [info] {sfWebResponse} Send content (33648 o)
+May 08 23:36:42 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:36:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:36:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:36:42 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:36:42 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:36:42 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:36:44 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/stereoket-twitteroauth-bf22e12/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:36:44 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/stereoket-twitteroauth-bf22e12/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:36:44 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 31 (Undefined index: oauth_token)
+May 08 23:36:44 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 34 (Undefined index: oauth_token_secret)
+May 08 23:36:44 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:36:44 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:36:44 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:36:44 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:36:44 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php:23))
+May 08 23:36:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:36:44 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php:23))
+May 08 23:36:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:36:44 symfony [info] {sfWebDebugLogger} Configuration 1.93 ms (9)
+May 08 23:36:44 symfony [info] {sfWebDebugLogger} Factories 10.49 ms (1)
+May 08 23:36:44 symfony [info] {sfWebDebugLogger} Action "account/connect" 2020.58 ms (1)
+May 08 23:36:44 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 9.26 ms (1)
+May 08 23:36:44 symfony [info] {sfWebResponse} Send content (33690 o)
+May 08 23:42:20 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:42:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:42:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:42:20 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:42:20 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_key)
+May 08 23:42:20 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 23 (Undefined variable: consumer_secret)
+May 08 23:42:21 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:42:21 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:42:21 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 31 (Undefined index: oauth_token)
+May 08 23:42:21 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 34 (Undefined index: oauth_token_secret)
+May 08 23:42:21 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:42:21 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:42:21 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:42:21 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:42:21 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php:23))
+May 08 23:42:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:42:21 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php:23))
+May 08 23:42:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:42:21 symfony [info] {sfWebDebugLogger} Configuration 144.79 ms (9)
+May 08 23:42:21 symfony [info] {sfWebDebugLogger} Factories 102.35 ms (1)
+May 08 23:42:21 symfony [info] {sfWebDebugLogger} Action "account/connect" 1038.51 ms (1)
+May 08 23:42:21 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 13.62 ms (1)
+May 08 23:42:21 symfony [info] {sfWebResponse} Send content (33695 o)
+May 08 23:44:31 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:45:45 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:45:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:45:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:45:45 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:45:46 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:45:46 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:45:46 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 35 (Undefined index: oauth_token)
+May 08 23:45:46 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 38 (Undefined index: oauth_token_secret)
+May 08 23:45:46 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:45:46 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:45:46 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:45:46 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:45:46 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:45:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:45:46 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:45:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:45:46 symfony [info] {sfWebDebugLogger} Configuration 1.76 ms (9)
+May 08 23:45:46 symfony [info] {sfWebDebugLogger} Factories 10.44 ms (1)
+May 08 23:45:46 symfony [info] {sfWebDebugLogger} Action "account/connect" 1026.31 ms (1)
+May 08 23:45:46 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 7.21 ms (1)
+May 08 23:45:46 symfony [info] {sfWebResponse} Send content (33690 o)
+May 08 23:45:58 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:45:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:45:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:45:58 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:46:00 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:46:00 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:46:00 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 36 (Undefined index: oauth_token)
+May 08 23:46:00 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 39 (Undefined index: oauth_token_secret)
+May 08 23:46:00 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:46:00 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:46:00 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:46:00 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:46:00 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:46:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:46:00 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:46:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:46:00 symfony [info] {sfWebDebugLogger} Configuration 1.83 ms (9)
+May 08 23:46:00 symfony [info] {sfWebDebugLogger} Factories 6.92 ms (1)
+May 08 23:46:00 symfony [info] {sfWebDebugLogger} Action "account/connect" 1632.58 ms (1)
+May 08 23:46:00 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 7.31 ms (1)
+May 08 23:46:00 symfony [info] {sfWebResponse} Send content (33689 o)
+May 08 23:46:53 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:47:07 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:47:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:47:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:47:07 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:47:10 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:47:10 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:47:10 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/actions/actions.class.php on line 40 (Undefined index: oauth_token_secret)
+May 08 23:47:10 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:47:10 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:47:10 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:47:10 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:47:10 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:47:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:47:10 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:47:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:47:10 symfony [info] {sfWebDebugLogger} Configuration 2.26 ms (9)
+May 08 23:47:10 symfony [info] {sfWebDebugLogger} Factories 6.97 ms (1)
+May 08 23:47:10 symfony [info] {sfWebDebugLogger} Action "account/connect" 2742.81 ms (1)
+May 08 23:47:10 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 6.53 ms (1)
+May 08 23:47:10 symfony [info] {sfWebResponse} Send content (33689 o)
+May 08 23:47:34 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:47:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:47:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:47:34 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:47:35 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:47:35 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:47:35 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:47:35 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:47:35 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:47:35 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:47:35 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:47:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:47:35 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:47:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:47:35 symfony [info] {sfWebDebugLogger} Configuration 2.13 ms (9)
+May 08 23:47:35 symfony [info] {sfWebDebugLogger} Factories 6.45 ms (1)
+May 08 23:47:35 symfony [info] {sfWebDebugLogger} Action "account/connect" 698.43 ms (1)
+May 08 23:47:35 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 7.02 ms (1)
+May 08 23:47:35 symfony [info] {sfWebResponse} Send content (33687 o)
+May 08 23:50:10 symfony [info] {sfPatternRouting} Match route "account" (/account) for /account with parameters array (  'module' => 'account',  'action' => 'connect',)
+May 08 23:50:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 08 23:50:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 08 23:50:10 symfony [info] {accountActions} Call "accountActions->executeConnect()"
+May 08 23:50:12 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token)
+May 08 23:50:12 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php on line 64 (Undefined index: oauth_token_secret)
+May 08 23:50:12 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php"
+May 08 23:50:12 symfony [notice] {sfWebDebugLogger}  Notice at /private/var/www/html/git/twical/src/apps/frontend/modules/account/templates/connectSuccess.php on line 21 (Undefined variable: content)
+May 08 23:50:12 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:50:12 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 08 23:50:12 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:50:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 08 23:50:12 symfony [warning] {sfWebDebugLogger}  Warning at /private/var/www/html/git/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /private/var/www/html/git/twical/src/lib/twitteroauth/twitteroauth.php:64))
+May 08 23:50:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 08 23:50:12 symfony [info] {sfWebDebugLogger} Configuration 2.04 ms (9)
+May 08 23:50:12 symfony [info] {sfWebDebugLogger} Factories 6.38 ms (1)
+May 08 23:50:12 symfony [info] {sfWebDebugLogger} Action "account/connect" 2049.74 ms (1)
+May 08 23:50:12 symfony [info] {sfWebDebugLogger} View "Success" for "account/connect" 8.66 ms (1)
+May 08 23:50:12 symfony [info] {sfWebResponse} Send content (33689 o)
+May 09 01:11:37 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 01:11:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 01:11:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 01:11:37 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 01:11:37 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 01:11:37 symfony [info] {sfPHPView} Decorate content with "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 09 01:11:37 symfony [info] {sfPHPView} Render "/private/var/www/html/git/twical/src/apps/frontend/templates/layout.php"
+May 09 01:11:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 01:11:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 01:11:37 symfony [info] {sfWebDebugLogger} Configuration 115.95 ms (10)
+May 09 01:11:37 symfony [info] {sfWebDebugLogger} Factories 73.56 ms (1)
+May 09 01:11:37 symfony [info] {sfWebDebugLogger} Action "default/index" 0.20 ms (1)
+May 09 01:11:37 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 22.26 ms (1)
+May 09 01:11:37 symfony [info] {sfWebResponse} Send content (27625 o)
+=======
 May 08 23:20:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
 May 08 23:20:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
 May 08 23:20:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
@@ -250,6 +669,7 @@ May 09 01:55:40 symfony [info] {sfWebDebugLogger} Factories 15.79 ms (1)
 May 09 01:55:40 symfony [info] {sfWebDebugLogger} Action "default/index" 0.27 ms (1)
 May 09 01:55:40 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 13.74 ms (1)
 May 09 01:55:40 symfony [info] {sfWebResponse} Send content (29689 o)
+<<<<<<< HEAD
 May 09 02:07:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
 May 09 02:07:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
 May 09 02:07:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
@@ -289,3 +709,6 @@ May 09 02:07:35 symfony [info] {sfWebDebugLogger} Factories 15.63 ms (1)
 May 09 02:07:35 symfony [info] {sfWebDebugLogger} Action "default/index" 0.24 ms (1)
 May 09 02:07:35 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 4.99 ms (1)
 May 09 02:07:35 symfony [info] {sfWebResponse} Send content (31118 o)
+=======
+>>>>>>> 027d6cd079c482ed8aa6fca8c18f3d0ba6dbd717
+>>>>>>> a7489e215a3f8d0d5889722c52b4bd236e73753f
