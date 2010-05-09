@@ -3,7 +3,7 @@
 
 authorised:
   url:   /authorised
-  param: { module: default, action: loadData }
+  param: { module: default, action: login }
 
 login:
   url:   /login
