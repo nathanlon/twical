@@ -110,7 +110,6 @@ sfGuardUserPermission:
       primary: true
     permission_id:
       type: integer(4)
-      primary: true
   relations:
     sfGuardUser:
       local: user_id
