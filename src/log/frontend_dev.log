@@ -250,3 +250,42 @@ May 09 01:55:40 symfony [info] {sfWebDebugLogger} Factories 15.79 ms (1)
 May 09 01:55:40 symfony [info] {sfWebDebugLogger} Action "default/index" 0.27 ms (1)
 May 09 01:55:40 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 13.74 ms (1)
 May 09 01:55:40 symfony [info] {sfWebResponse} Send content (29689 o)
+May 09 02:07:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 02:07:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 02:07:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 02:07:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 02:07:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 02:07:29 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 02:07:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 02:07:29 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 02:07:29 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 02:07:29 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 02:07:29 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 02:07:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 02:07:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 02:07:29 symfony [info] {sfWebDebugLogger} Configuration 71.95 ms (10)
+May 09 02:07:29 symfony [info] {sfWebDebugLogger} Factories 83.74 ms (1)
+May 09 02:07:29 symfony [info] {sfWebDebugLogger} Action "default/index" 0.27 ms (1)
+May 09 02:07:29 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 6.78 ms (1)
+May 09 02:07:29 symfony [info] {sfWebResponse} Send content (29690 o)
+May 09 02:07:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 02:07:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 02:07:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 02:07:35 symfony [info] {sfPatternRouting} Match route "load_data" (/load) for /load with parameters array (  'module' => 'default',  'action' => 'loadData',)
+May 09 02:07:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 02:07:35 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 02:07:35 symfony [info] {sfBasicSecurityFilter} Action "default/loadData" requires authentication, forwarding to "default/index"
+May 09 02:07:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 02:07:35 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 02:07:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 02:07:35 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 02:07:35 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 02:07:35 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 02:07:35 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 02:07:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 02:07:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 02:07:35 symfony [info] {sfWebDebugLogger} Configuration 5.10 ms (12)
+May 09 02:07:35 symfony [info] {sfWebDebugLogger} Factories 15.63 ms (1)
+May 09 02:07:35 symfony [info] {sfWebDebugLogger} Action "default/index" 0.24 ms (1)
+May 09 02:07:35 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 4.99 ms (1)
+May 09 02:07:35 symfony [info] {sfWebResponse} Send content (31118 o)
