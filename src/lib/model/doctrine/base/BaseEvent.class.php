@@ -50,10 +50,11 @@ abstract class BaseEvent extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('event');
-        $this->hasColumn('id', 'integer', null, array(
+        $this->hasColumn('id', 'integer', 4, array(
              'type' => 'integer',
              'primary' => true,
              'autoincrement' => true,
+             'length' => 4,
              ));
         $this->hasColumn('name', 'string', 70, array(
              'type' => 'string',
@@ -85,8 +86,9 @@ abstract class BaseEvent extends sfDoctrineRecord
              'type' => 'timestamp',
              'notnull' => true,
              ));
-        $this->hasColumn('person_id', 'integer', null, array(
+        $this->hasColumn('person_id', 'integer', 4, array(
              'type' => 'integer',
+             'length' => 4,
              ));
     }
 

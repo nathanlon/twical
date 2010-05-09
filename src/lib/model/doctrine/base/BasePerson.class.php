@@ -47,10 +47,11 @@ abstract class BasePerson extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('person');
-        $this->hasColumn('id', 'integer', null, array(
+        $this->hasColumn('id', 'integer', 4, array(
              'type' => 'integer',
              'primary' => true,
              'autoincrement' => true,
+             'length' => 4,
              ));
         $this->hasColumn('is_muted', 'boolean', null, array(
              'type' => 'boolean',
@@ -75,8 +76,9 @@ abstract class BasePerson extends sfDoctrineRecord
              'type' => 'string',
              'length' => 1024,
              ));
-        $this->hasColumn('sf_guard_user_id', 'integer', null, array(
+        $this->hasColumn('sf_guard_user_id', 'integer', 4, array(
              'type' => 'integer',
+             'length' => 4,
              ));
     }
 
