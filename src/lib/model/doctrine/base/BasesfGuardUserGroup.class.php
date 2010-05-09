@@ -36,6 +36,7 @@ abstract class BasesfGuardUserGroup extends sfDoctrineRecord
              ));
         $this->hasColumn('group_id', 'integer', 4, array(
              'type' => 'integer',
+             'primary' => true,
              'length' => 4,
              ));
 

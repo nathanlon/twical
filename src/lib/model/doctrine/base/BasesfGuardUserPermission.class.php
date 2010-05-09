@@ -36,6 +36,7 @@ abstract class BasesfGuardUserPermission extends sfDoctrineRecord
              ));
         $this->hasColumn('permission_id', 'integer', 4, array(
              'type' => 'integer',
+             'primary' => true,
              'length' => 4,
              ));
 
