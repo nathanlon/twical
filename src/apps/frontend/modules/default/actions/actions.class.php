@@ -17,17 +17,16 @@ class defaultActions extends sfActions {
   {
     echo "CHECK AUTH";
     //Create a person mapping to sf_guard_user
-   if ($this->getUser()->isAuthenticated() == true)
-   {
-     echo "AUTHENTICATED SESSION";
+    if ($this->getUser()->isAuthenticated() == true)
+    {
+      echo "AUTHENTICATED SESSION";
 
-print_r($_SESSION); ?>
-
-
-     //create the person against the user.
-     $person = new Person();
-     //$person->setSfGuardUserId($this->getUser()->get)
-   }
+      print_r($_SESSION);
+      
+      //create the person against the user.
+      $person = new Person();
+      //$person->setSfGuardUserId($this->getUser()->get)
+    }
 
     //$this->forward('default', 'index');
   }
