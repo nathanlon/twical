@@ -3,3 +3,7 @@
 
 # default values
 #all:
+all:
+  sfTwitterAuth:
+    consumer_key: 'j1f0PAgq23BQpHfqu1I3dA'
+    consumer_secret: 'ntG04nVidtg5SjEHRcNvjfq6iUfydZIjyD6u9I'

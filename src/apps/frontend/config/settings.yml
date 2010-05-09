@@ -33,3 +33,6 @@ all:
 
     # Enable the database manager
     use_database:           true
+
+    enabled_modules: [sfGuardAuth, sfTwitterAuth]
+
