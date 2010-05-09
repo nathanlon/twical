@@ -14,6 +14,7 @@ class defaultActions extends sfActions {
    if ($this->getUser()->isAuthenticated() == true)
    {
      $this->loggedIn = true;
+     $this->redirect('default/secureHome');
    }
 
   }
@@ -34,11 +35,23 @@ class defaultActions extends sfActions {
       $token = $user->getAttribute('sfTwitterAuth_oauth_access_token');
       $secret = $user->getAttribute('sfTwitterAuth_oauth_access_token_secret');
 
-      $person = new Person();
-      $person->setSfGuardUserId($guardUserId);
-      $person->setTwitterToken($token);
-      $person->setTwitterSecret($secret);
-      $person->save();
+      //look for a person with this guard user id already.
+      $q = Doctrine_Query::create()
+        ->from('Person p')
+        ->where('p.sf_guard_user_id == ?', $guardUserId);
+
+      $person = $q->execute();
+
+      print_r($person);
+
+      if (is_null($person))
+      {
+        $person = new Person();
+        $person->setSfGuardUserId($guardUserId);
+        $person->setTwitterToken($token);
+        $person->setTwitterSecret($secret);
+        $person->save();
+      }
 
       $this->redirect('default/secureHome');
     }
