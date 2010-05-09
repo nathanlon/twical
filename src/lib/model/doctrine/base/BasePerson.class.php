@@ -15,6 +15,7 @@
  * @property integer $sf_guard_user_id
  * @property Doctrine_Collection $Event
  * 
+<<<<<<< HEAD
  * @method integer             getId()               Returns the current record's "id" value
  * @method boolean             getIsMuted()          Returns the current record's "is_muted" value
  * @method string              getTwitterToken()     Returns the current record's "twitter_token" value
