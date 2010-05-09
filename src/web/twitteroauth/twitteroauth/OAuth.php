@@ -290,7 +290,14 @@ class OAuthRequest {
    * pretty much a helper function to set up the request
    */
   public static function from_consumer_and_token($consumer, $token, $http_method, $http_url, $parameters=NULL) {
-    @$parameters or $parameters = array();
+
+    echo "GOT IN FROM_CONSUMER";
+    if (is_null($parameters)) {
+      $parameters = array();
+    }
+
+    //@$parameters or $parameters = array();
+
     $defaults = array("oauth_version" => OAuthRequest::$version,
                       "oauth_nonce" => OAuthRequest::generate_nonce(),
                       "oauth_timestamp" => OAuthRequest::generate_timestamp(),
@@ -299,6 +306,9 @@ class OAuthRequest {
       $defaults['oauth_token'] = $token->key;
 
     $parameters = array_merge($defaults, $parameters);
+
+    echo "PARAMS ARE=";
+    print_r($parameters);
 
     return new OAuthRequest($http_method, $http_url, $parameters);
   }

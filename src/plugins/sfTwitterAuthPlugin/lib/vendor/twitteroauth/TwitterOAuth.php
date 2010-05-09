@@ -29,7 +29,14 @@ class TwitterOAuth {/*{{{*/
   /**
    * Set API URLS
    */
-  function requestTokenURL() { return self::$TO_API_ROOT.'/oauth/request_token'; }
+
+  function requestTokenURL() { 
+    
+    $var = self::$TO_API_ROOT.'/oauth/request_token';
+    return $var;
+
+
+  }
   function authorizeURL() { return self::$TO_API_ROOT.'/oauth/authorize'; }
   function accessTokenURL() { return self::$TO_API_ROOT.'/oauth/access_token'; }
 
@@ -60,6 +67,7 @@ class TwitterOAuth {/*{{{*/
    */
   function getRequestToken() {/*{{{*/
     $r = $this->oAuthRequest($this->requestTokenURL());
+
     $token = $this->oAuthParseResponse($r);
     $this->token = new OAuthConsumer($token['oauth_token'], $token['oauth_token_secret']);
     return $token;
@@ -108,9 +116,25 @@ class TwitterOAuth {/*{{{*/
    * Format and sign an OAuth / API request
    */
   function oAuthRequest($url, $args = array(), $method = NULL) {/*{{{*/
+
+    echo "GOT THIS FAR";
+
     if (empty($method)) $method = empty($args) ? "GET" : "POST";
+
+    echo "BEFORE-";
     $req = OAuthRequest::from_consumer_and_token($this->consumer, $this->token, $method, $url, $args);
+echo "after-";
+
+    //echo "SHA1METHOD=".$this->sha1_method;
+    echo "CONSUMER=".$this->consumer;
+    echo ", TOKEN = ".$this->token;
+    echo ", METHOD = ".$method.", URL=$url, ARGS=".print_r($args, true);
+
+
     $req->sign_request($this->sha1_method, $this->consumer, $this->token);
+
+    echo "<br />TOURL = ".$req->to_url();
+
     switch ($method) {
     case 'GET': return $this->http($req->to_url());
     case 'POST': return $this->http($req->get_normalized_http_url(), $req->to_postdata());
