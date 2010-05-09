@@ -28,13 +28,21 @@ class defaultActions extends sfActions {
     {
       echo "AUTHENTICATED SESSION";
       //create the person against the user.
-      $person = new Person();
-      $person->setSfGuardUserId($guardUserId);
-      //no save.
+
+      print_r($_SESSION);
 
       $guardUser = $this->getUser()->getGuardUser();
       $guardUserId = $guardUser->getId();
+
+      $person = new Person();
+      $person->setSfGuardUserId($guardUserId);
+      //$person->setTwitterSecret()
+      //no save.
+
+
       echo "GUARD USER = $guardUserId";
+
+
 
     }
 
