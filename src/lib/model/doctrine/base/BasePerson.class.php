@@ -13,7 +13,6 @@
  * @property string $account_name
  * @property string $calendar_url
  * @property integer $sf_guard_user_id
- * @property sfGuardUser $sfGuardUser
  * @property Doctrine_Collection $Event
  * 
  * @method integer             getId()               Returns the current record's "id" value
@@ -24,7 +23,6 @@
  * @method string              getAccountName()      Returns the current record's "account_name" value
  * @method string              getCalendarUrl()      Returns the current record's "calendar_url" value
  * @method integer             getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
- * @method sfGuardUser         getSfGuardUser()      Returns the current record's "sfGuardUser" value
  * @method Doctrine_Collection getEvent()            Returns the current record's "Event" collection
  * @method Person              setId()               Sets the current record's "id" value
  * @method Person              setIsMuted()          Sets the current record's "is_muted" value
@@ -34,7 +32,6 @@
  * @method Person              setAccountName()      Sets the current record's "account_name" value
  * @method Person              setCalendarUrl()      Sets the current record's "calendar_url" value
  * @method Person              setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
- * @method Person              setSfGuardUser()      Sets the current record's "sfGuardUser" value
  * @method Person              setEvent()            Sets the current record's "Event" collection
  * 
  * @package    twical
@@ -85,10 +82,6 @@ abstract class BasePerson extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('sfGuardUser', array(
-             'local' => 'sf_guard_user_id',
-             'foreign' => 'id'));
-
         $this->hasMany('Event', array(
              'local' => 'id',
              'foreign' => 'person_id'));

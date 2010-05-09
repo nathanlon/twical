@@ -22,7 +22,7 @@ abstract class BasePersonForm extends BaseFormDoctrine
       'twitter_userid'   => new sfWidgetFormInputText(),
       'account_name'     => new sfWidgetFormInputText(),
       'calendar_url'     => new sfWidgetFormTextarea(),
-      'sf_guard_user_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'), 'add_empty' => true)),
+      'sf_guard_user_id' => new sfWidgetFormInputText(),
       'created_at'       => new sfWidgetFormDateTime(),
       'updated_at'       => new sfWidgetFormDateTime(),
     ));
@@ -35,7 +35,7 @@ abstract class BasePersonForm extends BaseFormDoctrine
       'twitter_userid'   => new sfValidatorInteger(array('required' => false)),
       'account_name'     => new sfValidatorString(array('max_length' => 20, 'required' => false)),
       'calendar_url'     => new sfValidatorString(array('max_length' => 1024, 'required' => false)),
-      'sf_guard_user_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'), 'required' => false)),
+      'sf_guard_user_id' => new sfValidatorInteger(array('required' => false)),
       'created_at'       => new sfValidatorDateTime(),
       'updated_at'       => new sfValidatorDateTime(),
     ));
