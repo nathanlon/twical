@@ -21,7 +21,7 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oau
 
 /* If method is set change API call made. Test is called by default. */
 $content = $connection->get('account/verify_credentials');
-$url="http://api.twitter.com/version/friends/ids.json";
+$url="http://api.twitter.com/version/statuses/update.json";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, 1);
