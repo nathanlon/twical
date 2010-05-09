@@ -1,9 +1,23 @@
-<h1>Welcome to TwiCal.net</h1>
-
-<div>TwiCal allows you receive reminders via twitter for upcoming events in your Google Calendar</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>twiCal - your Calendar tweets</title>
+</head>
+<body>
+<h1>TwiCal <span>an open source cal-tweet web service</span></h1>
+<img src="/images/twical-icon.png" class="logo" />
+<div id="introbox">TwiCal allows you upload your own calendar schedules and receive reminders via twitter for upcoming events , with the goal to use geo lookups as well. The service will allow granular control to the user.</div>
 
 <?php if ($loggedIn): ?>
-<div class="loggedIn">You are logged in</div>
+<div class="loggedIn">You are logged in
+
+<p>Please look at your calendar settings pages OR upload a new calendar now</p>
+</div>
 <?php else: ?>
-<div class="loggedIn"><?php echo link_to('Log in using Twitter', '@login') ?></div>
+<div class="logIn">
+<?php echo link_to(image_tag('/twitteroauth/images/darker.png', array('border' => 0, "class" => 'twitterlogin')), '@login') ?>
+</div>
 <?php endif; ?>
+
+</body>
+</html>
