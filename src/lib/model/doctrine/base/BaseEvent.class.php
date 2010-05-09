@@ -87,7 +87,6 @@ abstract class BaseEvent extends sfDoctrineRecord
              ));
         $this->hasColumn('person_id', 'integer', null, array(
              'type' => 'integer',
-             'primary' => true,
              ));
     }
 
@@ -96,8 +95,7 @@ abstract class BaseEvent extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('Person', array(
              'local' => 'person_id',
-             'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'foreign' => 'id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

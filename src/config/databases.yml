@@ -3,5 +3,5 @@ all:
     class: sfDoctrineDatabase
     param:
       dsn: 'mysql:host=localhost;dbname=twical'
-      username: twical
-      password: 7z3g4sYvqU43Nk 
+      username: root
+      password: rooroo06 
