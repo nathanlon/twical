@@ -22,6 +22,9 @@ class defaultActions extends sfActions {
       echo "AUTHENTICATED SESSION";
 
       print_r($_SESSION);
+      $guardUser = $this->getUser()->getGuardUser();
+      $guardUserId = $guardUser->getId();
+
       
       //create the person against the user.
       $person = new Person();
