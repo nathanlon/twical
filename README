@@ -1,10 +1,73 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 Hello World. - Angus
 also hello from - John
 =======
+>>>>>>> de87069ef08ec2ea90a89e49e15f7280a5e9310e
 TwiCal
+======
 
 Built at WarbleCamp 2010 @warblecamp
 
-Devlelopers: @nuxnix @ketan @nathanlon @johnxcom and @farhan
+Development: @ketan @nathanlon @johnxcom
+Encouragement: @nuxnix @farhan
+Slides:  http://www.slideshare.net/nuxnix/warblecamp-twical
+
+
+Initial Challenge
+-----------------
+
+Would love to have an open source web service that could take as input an Internet calendar format appointment, process it using a simple config file (which could contain location string to centroid /  info table and strings and text to use in tweets, and output a tweet of the appointment at the time and with the geo location set, of the event. Bonus if it were able to do a reminder tweet before the event and a post tweet too.
+
+Discussion
+----------
+
+It would be really nice if twitter could make calendars timely and actionable.
+
+Calendar information is useful for you, and if tweeted at the right time would be useful to your followers, and to people nearby the event in question.
+
+So the idea of a web service which takes a web calendar or ics file as an input and processes the result and tweets it 'from you' at the determined time with the geographic location set in the tweet was born.
+
+
+Other sites of interest
+------------------------
+http://twtvite.com/api.php - has a limited api, no put, not really what we needed
+http://web.waycal.com/ - @nathanlon main project, It could build upon this hack. 
+http://microformats.org/wiki/hcalendar - iCalendar in semantic HTML 
+http://tools.ietf.org/html/rfc5545#section-3.8.1.6 - The GEO property is now available in iCalendar
+http://twitter.com/calagator - Open source calendar aggregator for the Portland Tech Community. 
+http://twistory.net/ - Add your Twitter backlog feed to your favorite calendar - the opposite of what we need
+http://www.geekery.in/calendar - an example event calendar
+http://www.bedework.org/bedework/ - Open source enterprise calendar system
+http://twitterdevelopernest.com/2010/02/devnest-london-twitter-developer-nest-7/ - @vicchi(Almost) Everything You Ever Wanted To Know About Geo and Twitter (with WOEIDs)
+http://isithackday.com/geoplanet-explorer/ - Yahoo Geoplanet explorer
+
+Simple Use Case
+---------------
+
+
+A person, 'Alice' has a calendar event in a .ics file or at a URL.
+
+Alice signs up for Twical online at twical.net by entering her twitter user name @alice
+- We create a unique address for alice on twical using this username - www.twical.net/alice
+- We ask twitter to give permission for us to tweet on Alices behalf
+- If permitted we set up the default settings
+- Alice needs to tell us the URL of her web calendar if anything more is to happen.
+- Now alice is set up
+
+Alice can return to her page to upload a .ics file or provide a web calendar URL.
+Uploaded events or those from the web calendar are tweeted by twical on behalf of @alice, 
+- By default we send the tweet 24 hours in advance, 1 hour in advance, and at the time of the event
+- By default we send the following tweet
+  'Attending <meeting subject> <in 1 hour/24hours/now>, at <text value of location>, <see http://urltoeventpageshortened> #twical
+- The tweet will also be sent with GEO information set so that twitter clients can locate the event.. If there is no GEO property in the iCalendar data, then the GEO information will be set by converting the text value of the location into the most likely place using the YDN geoplaces technology.
+
+Alice later decides she does not want this to continue, and returns to www.twical/alice and sets her account to mute. No more tweets will come from twitcal until Alice unmutes her account.
+
+Alice later decides to delete her account by returning to www.twical.com and clicking 'delete account' and cofirming that she wants to delete it. 
+
+If Alice wants to re-enable twical she will need to set up a new account.
+
+
 >>>>>>> 4cc1d650dcdbc53087eb6ee94f195fece0c38cba
