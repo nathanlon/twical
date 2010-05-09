@@ -15,8 +15,19 @@ class defaultActions extends sfActions {
 
   public function executeLogin(sfWebRequest $request)
   {
+    echo "CHECK AUTH";
     //Create a person mapping to sf_guard_user
-    
+   if ($this->getUser()->isAuthenticated() == true)
+   {
+     echo "AUTHENTICATED SESSION";
+
+print_r($_SESSION); ?>
+
+
+     //create the person against the user.
+     $person = new Person();
+     //$person->setSfGuardUserId($this->getUser()->get)
+   }
 
     //$this->forward('default', 'index');
   }

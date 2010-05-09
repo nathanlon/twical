@@ -77,6 +77,7 @@ abstract class BasePerson extends sfDoctrineRecord
              ));
         $this->hasColumn('sf_guard_user_id', 'integer', null, array(
              'type' => 'integer',
+             'notnull' => true,
              ));
     }
 
