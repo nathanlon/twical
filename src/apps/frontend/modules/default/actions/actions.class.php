@@ -25,6 +25,7 @@ class defaultActions extends sfActions {
       $guardUser = $this->getUser()->getGuardUser();
       $guardUserId = $guardUser->getId();
 
+      echo " GUARD USER IS ".$guardUserId;
       
       //create the person against the user.
       $person = new Person();
