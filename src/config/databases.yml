@@ -4,4 +4,4 @@ all:
     param:
       dsn: 'mysql:host=localhost;dbname=twical'
       username: root
-      password: rooroo06 
+      password:
