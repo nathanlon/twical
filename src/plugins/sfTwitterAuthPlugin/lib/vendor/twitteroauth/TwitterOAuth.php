@@ -117,23 +117,10 @@ class TwitterOAuth {/*{{{*/
    */
   function oAuthRequest($url, $args = array(), $method = NULL) {/*{{{*/
 
-    echo "GOT THIS FAR";
-
     if (empty($method)) $method = empty($args) ? "GET" : "POST";
-
-    echo "BEFORE-";
     $req = OAuthRequest::from_consumer_and_token($this->consumer, $this->token, $method, $url, $args);
-echo "after-";
-
-    //echo "SHA1METHOD=".$this->sha1_method;
-    echo "CONSUMER=".$this->consumer;
-    echo ", TOKEN = ".$this->token;
-    echo ", METHOD = ".$method.", URL=$url, ARGS=".print_r($args, true);
-
 
     $req->sign_request($this->sha1_method, $this->consumer, $this->token);
-
-    echo "<br />TOURL = ".$req->to_url();
 
     switch ($method) {
     case 'GET': return $this->http($req->to_url());
@@ -165,8 +152,6 @@ echo "after-";
     $this->http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $this->last_api_call = $url;
     curl_close ($ch);
-
-    echo "<br />IN CURL NOW response = ".$response;
 
     return $response;
   }/*}}}*/
