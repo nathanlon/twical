@@ -24,7 +24,7 @@ abstract class BaseEventForm extends BaseFormDoctrine
       'url'         => new sfWidgetFormInputText(),
       'start_time'  => new sfWidgetFormDateTime(),
       'end_time'    => new sfWidgetFormDateTime(),
-      'person_id'   => new sfWidgetFormInputHidden(),
+      'person_id'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Person'), 'add_empty' => true)),
       'created_at'  => new sfWidgetFormDateTime(),
       'updated_at'  => new sfWidgetFormDateTime(),
     ));
@@ -39,7 +39,7 @@ abstract class BaseEventForm extends BaseFormDoctrine
       'url'         => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'start_time'  => new sfValidatorDateTime(),
       'end_time'    => new sfValidatorDateTime(),
-      'person_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getModelName(), 'column' => 'person_id', 'required' => false)),
+      'person_id'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Person'), 'required' => false)),
       'created_at'  => new sfValidatorDateTime(),
       'updated_at'  => new sfValidatorDateTime(),
     ));
