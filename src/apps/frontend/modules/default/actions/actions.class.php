@@ -14,6 +14,7 @@ class defaultActions extends sfActions {
    if ($this->getUser()->isAuthenticated() == true)
    {
      $this->loggedIn = true;
+     $this->redirect('default/secureHome');
    }
 
   }
