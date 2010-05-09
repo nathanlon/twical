@@ -1,0 +1,26 @@
+Person:
+  actAs: { Timestampable: ~ }
+  columns:
+    id:                 { type: integer, primary: true, autoincrement: true, notnull: true }
+    is_muted:           { type: boolean, default: 0 }
+    twitter_token:      { type: string(255) }
+    twitter_secret:     { type: string(255) }
+    twitter_userid:     integer
+    account_name:       { type: string(20) }
+    calendar_url:       { type: string(1024) }
+
+Event:
+  actAs: { Timestampable: ~ }
+  columns:
+    id:                        { type: integer, primary: true, autoincrement: true, notnull: true }
+    name:                      string(70)
+    description:               string(1500)
+    location:                  string(200)
+    latitude:                  float
+    longitude:                 float
+    url:                       string(255)
+    start_time:                { type: timestamp, notnull: true }
+    end_time:                  { type: timestamp, notnull: true }
+    person_id:                 { type: integer, primary: true }
+  relations:
+    Person:  { onDelete: CASCADE, local: person_id, foreign: id }
