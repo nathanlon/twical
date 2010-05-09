@@ -79,7 +79,7 @@
 			   if (PEAR::isError ($conn)){
 			       die ("MDB2 Error - Cannot connect: " . $conn->getUserInfo () . "\n");
 			       }
-			$qry = "insert into `twical`.`event` (`twitter_userid`, `event`,`startDate`, `startTime`, `endDate`, `endTime`, 'location') 
+			$qry = "insert into `twical`.`events` (`twitter_userid`, `event`,`startDate`, `startTime`, `endDate`, `endTime`, 'location') 
 				values ($myString) ";
 			echo $qry;
 			$conn->query($qry);
