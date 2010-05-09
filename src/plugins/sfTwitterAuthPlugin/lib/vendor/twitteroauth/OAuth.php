@@ -174,7 +174,6 @@ class OAuthRequest {/*{{{*/
   public static $version = '1.0';
 
   function __construct($http_method, $http_url, $parameters=NULL) {/*{{{*/
-    echo "<br />CONSTRUCTOR";
     //@$parameters or $parameters = array();
 
     if (is_null($parameters))
@@ -228,7 +227,6 @@ class OAuthRequest {/*{{{*/
    */
   public static function from_consumer_and_token($consumer, $token, $http_method, $http_url, $parameters=NULL) {/*{{{*/
 
-    echo "GOT IN FROM_CONSUMER";
     if (is_null($parameters)) {
       $parameters = array();
     }
@@ -243,10 +241,6 @@ class OAuthRequest {/*{{{*/
       $defaults['oauth_token'] = $token->key;
 
     $parameters = array_merge($defaults, $parameters);
-
-    echo "PARAMS ARE=";
-    print_r($parameters);
-    echo "<br />HTTPMETHOD=".$http_method.", HTTP_URL=".$http_url."PARAMS=".print_r($parameters, true);
 
     return new OAuthRequest($http_method, $http_url, $parameters);
   }/*}}}*/
