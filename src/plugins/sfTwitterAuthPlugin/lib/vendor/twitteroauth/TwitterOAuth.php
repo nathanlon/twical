@@ -165,6 +165,9 @@ echo "after-";
     $this->http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     $this->last_api_call = $url;
     curl_close ($ch);
+
+    echo "<br />IN CURL NOW";
+
     return $response;
   }/*}}}*/
 }/*}}}*/
