@@ -1,5 +1,10 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+load_data:
+  url:   /load
+  param: { module: default, action: loadData }
+
 sf_guard_signin:
   url:   /login
   param: { module: sfGuardAuth, action: signin }
