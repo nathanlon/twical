@@ -712,3 +712,23 @@ May 09 02:07:35 symfony [info] {sfWebResponse} Send content (31118 o)
 =======
 >>>>>>> 027d6cd079c482ed8aa6fca8c18f3d0ba6dbd717
 >>>>>>> a7489e215a3f8d0d5889722c52b4bd236e73753f
+May 09 06:39:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 09 06:39:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 09 06:39:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 09 06:39:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 09 06:39:46 symfony [info] {myUser} Automatic user logout due to timeout
+May 09 06:39:46 symfony [info] {myUser} User is not authenticated
+May 09 06:39:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 09 06:39:46 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 09 06:39:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 09 06:39:46 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 09 06:39:46 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 09 06:39:46 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:39:46 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 09 06:39:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 09 06:39:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 09 06:39:46 symfony [info] {sfWebDebugLogger} Configuration 98.48 ms (10)
+May 09 06:39:46 symfony [info] {sfWebDebugLogger} Factories 108.59 ms (1)
+May 09 06:39:46 symfony [info] {sfWebDebugLogger} Action "default/index" 0.30 ms (1)
+May 09 06:39:46 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.13 ms (1)
+May 09 06:39:46 symfony [info] {sfWebResponse} Send content (31001 o)
