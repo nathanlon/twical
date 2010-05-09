@@ -15,7 +15,6 @@
  * @property integer $sf_guard_user_id
  * @property Doctrine_Collection $Event
  * 
-<<<<<<< HEAD
  * @method integer             getId()               Returns the current record's "id" value
  * @method boolean             getIsMuted()          Returns the current record's "is_muted" value
  * @method string              getTwitterToken()     Returns the current record's "twitter_token" value
@@ -45,10 +44,11 @@ abstract class BasePerson extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('person');
-        $this->hasColumn('id', 'integer', null, array(
+        $this->hasColumn('id', 'integer', 4, array(
              'type' => 'integer',
              'primary' => true,
              'autoincrement' => true,
+             'length' => 4,
              ));
         $this->hasColumn('is_muted', 'boolean', null, array(
              'type' => 'boolean',
@@ -73,9 +73,9 @@ abstract class BasePerson extends sfDoctrineRecord
              'type' => 'string',
              'length' => 1024,
              ));
-        $this->hasColumn('sf_guard_user_id', 'integer', null, array(
+        $this->hasColumn('sf_guard_user_id', 'integer', 4, array(
              'type' => 'integer',
-             'primary' => true,
+             'length' => 4,
              ));
     }
 

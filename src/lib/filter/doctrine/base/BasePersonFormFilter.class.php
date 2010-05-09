@@ -19,6 +19,7 @@ abstract class BasePersonFormFilter extends BaseFormFilterDoctrine
       'twitter_userid'   => new sfWidgetFormFilterInput(),
       'account_name'     => new sfWidgetFormFilterInput(),
       'calendar_url'     => new sfWidgetFormFilterInput(),
+      'sf_guard_user_id' => new sfWidgetFormFilterInput(),
       'created_at'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'updated_at'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
     ));
@@ -30,6 +31,7 @@ abstract class BasePersonFormFilter extends BaseFormFilterDoctrine
       'twitter_userid'   => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'account_name'     => new sfValidatorPass(array('required' => false)),
       'calendar_url'     => new sfValidatorPass(array('required' => false)),
+      'sf_guard_user_id' => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'created_at'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'updated_at'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
     ));

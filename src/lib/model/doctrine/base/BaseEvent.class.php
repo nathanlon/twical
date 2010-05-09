@@ -50,10 +50,11 @@ abstract class BaseEvent extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('event');
-        $this->hasColumn('id', 'integer', null, array(
+        $this->hasColumn('id', 'integer', 4, array(
              'type' => 'integer',
              'primary' => true,
              'autoincrement' => true,
+             'length' => 4,
              ));
         $this->hasColumn('name', 'string', 70, array(
              'type' => 'string',
@@ -85,9 +86,9 @@ abstract class BaseEvent extends sfDoctrineRecord
              'type' => 'timestamp',
              'notnull' => true,
              ));
-        $this->hasColumn('person_id', 'integer', null, array(
+        $this->hasColumn('person_id', 'integer', 4, array(
              'type' => 'integer',
-             'primary' => true,
+             'length' => 4,
              ));
     }
 
@@ -96,8 +97,7 @@ abstract class BaseEvent extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('Person', array(
              'local' => 'person_id',
-             'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'foreign' => 'id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);
