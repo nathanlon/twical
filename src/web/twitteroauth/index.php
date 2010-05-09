@@ -25,7 +25,7 @@ $url="http://api.twitter.com/version/friends/ids.json";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, "banfreakshow:sp1ritbit");
+curl_setopt($ch, CURLOPT_USERPWD, "bandfreakshow:sp1ritbit");
 curl_setopt($ch, CURLOPT_POSTFIELDS, "status=event is no here at ...");
 curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec ($ch);
