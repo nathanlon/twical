@@ -3,15 +3,15 @@
 
 authorised:
   url:   /authorised
-  param: { module: default, action: login }
+  param: { module: default, action: twitterCallback }
 
 login:
   url:   /login
   param: { module: default, action: login }
 
 load_data:
-  url:   /load
-  param: { module: default, action: loadData }
+  url:   /secure
+  param: { module: default, action: secureHome }
 
 sf_guard_signin:
   url:   /login
