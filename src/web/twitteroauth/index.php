@@ -28,7 +28,7 @@ curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec ($ch);
 curl_close ($ch);
 print_r( $data);
-
+/*
 require_once ('MDB2.php');
 
 $dsn = "mysqli://twical:7z3g4sYvqU43Nk@localhost/twical";
@@ -38,7 +38,7 @@ $conn = MDB2::connect ($dsn);
        }
 $qry = "insert into `twical`.`Person` ( `account_name`, `id`, `twitter_userid`, `twitter_secret`, `twitter_token`, `calendar_url`, `is_muted`) values ( '".$_SESSION['access_token']['oauth_token']."', '0', '97', '79797', '96969876', 'jgkjgjgjhgj', '1')";
 echo $qry;
-
+*/
 /*
  Some example calls */
 //
