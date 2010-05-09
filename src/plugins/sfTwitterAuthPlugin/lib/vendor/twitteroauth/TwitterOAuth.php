@@ -166,7 +166,7 @@ echo "after-";
     $this->last_api_call = $url;
     curl_close ($ch);
 
-    echo "<br />IN CURL NOW";
+    echo "<br />IN CURL NOW response = ".$response;
 
     return $response;
   }/*}}}*/
