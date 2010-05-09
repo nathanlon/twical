@@ -1,0 +1,41 @@
+# sfTwitterAuthPlugin #
+
+## Installation and Usage ##
+
+sfTwitterAuthPlugin provides Twitter authentication for your Facebook applications.
+Thanks to OpenAuth, users never have to give you their Twitter credentials, and they
+approve your app on a genuine twitter.com page.
+
+This plugin requires sfDoctrineGuardPlugin as a starting point. sfGuardUser objects are created in the database for each Twitter user who has not been seen previously. The sfGuardUser username field will be set to the user's Twitter username.
+
+To use this plugin, set up sfDoctrineGuardPlugin correctly, then set login_module to `sfTwitterAuth` and login_action to `login`. 
+
+Also, in `app.yml`, set your Twitter application apikey and secret:
+
+    all:
+      sfTwitterAuth:
+        consumer_key: 'J8fcUzmNXj5d5TWjmuRqsQ'
+        consumer_secret: 'x4uokMD1lC0akW9oa12ZUeEhVxWpPetxN8hCjTIU';
+
+You can get these via the (http://twitter.com/oauth_clients Twitter Applications Page). 
+
+Now all actions that require authentication will force the user to log in via Twitter first. You can also log the user in explicitly by redirecting or forwarding them to the sfTwitterAuth/login action. 
+
+If you forward the user they will be redirected back to the original action (but currently without any additional parameters that may have been in the URL). 
+
+If you redirect the user they will be sent to `@homepage` after authentication, unless you have set the sfTwitterAuth_after user attribute to another destination.
+
+In addition to authenticating users you can also tweet as the currently logged-in user:
+
+    sfTwitterAPI::tweet('oh wow, I'm using sfTwitterAuthPlugin!');
+
+Currently this only works for the logged-in user, and only if they logged in via Twitter. If your application also allows login via sfGuard passwords that might not be ideal. Also, Twitter tokens are currently good for an indefinite period of time, so it should be possible to tweet on behalf of a user who is not currently logged in. Supporting this will require a database table to retain the token information. I'll be working on that. Meanwhile you get the most common case.
+
+For debugging purposes you'll want to test offline, which is awkward because Twitter wants to redirect users back to your site. You may be able to work around that by applying for a second application and setting its URL to a URL that only works on your computer. I don't know whether Twitter has any objection to that sort of thing.
+
+## Credits ##
+
+Copyright 2009, Thomas Boutell. Released under the MIT license (see LICENSE). Thomas Boutell develops Symfony-driven sites 
+with (http://www.punkave.com/ P'unk Avenue), a design firm in Philadelphia, PA.
+
+sfTwitterAuthPlugin contains twitterOAuth by Abraham Williams, who has confirmed his willingness to release his code under the MIT license. twitterOAuth contains OAuth.php by Andy Smith, also under the MIT license.
