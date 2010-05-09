@@ -23,24 +23,34 @@ class defaultActions extends sfActions {
    */
   public function executeTwitterCallback(sfWebRequest $request)
   {
+
+    $user = $this->getUser();
+
     echo "<br />Check for AUTH";
-    if ($this->getUser()->isAuthenticated() == true)
+    if ($user->isAuthenticated() == true)
     {
       echo "AUTHENTICATED SESSION";
       //create the person against the user.
 
       print_r($_SESSION);
 
-      $guardUser = $this->getUser()->getGuardUser();
+      $guardUser = $user->getGuardUser();
       $guardUserId = $guardUser->getId();
-
-      $person = new Person();
-      $person->setSfGuardUserId($guardUserId);
-      //$person->setTwitterSecret()
-      //no save.
 
 
       echo "GUARD USER = $guardUserId";
+
+      $token = $user->getAttribute('sfTwitterAuth_oauth_request_token');
+      
+      echo "TOKEN = ".$token;
+
+      $person = new Person();
+      $person->setSfGuardUserId($guardUserId);
+      $person->setTwitterToken($token);
+      //$person->setTwitterSecret()
+      //no save.
+      $person->save();
+
 
 
 
