@@ -1,9 +1,9 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
-
-person_modify
+person_modify:
   url:   /person/modify
   param: { module: default, action: personModify }
+  
 authorised:
   url:   /authorised
   param: { module: default, action: twitterCallback }
