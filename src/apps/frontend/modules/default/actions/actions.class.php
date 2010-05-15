@@ -69,6 +69,8 @@ class defaultActions extends sfActions {
         $this->addedPerson = true;
       }
 
+      $user->setPersonId($person->getId());
+
       //$this->redirect('@homepage');
     }
   }
