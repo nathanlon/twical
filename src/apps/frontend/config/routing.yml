@@ -1,8 +1,8 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
-person_modify_create:
-  url:   /person/modify
-  param: { module: default, action: personModify }
+upload:
+  url:   /upload
+  param: { module: default, action: upload }
   
 authorised:
   url:   /authorised

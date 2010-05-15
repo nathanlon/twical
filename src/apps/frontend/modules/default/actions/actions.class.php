@@ -78,7 +78,11 @@ class defaultActions extends sfActions {
     }
   }
 
-  public function executePersonModify(sfWebRequest $request)
+  /**
+   * Receives the uploaded file and processes it as events for the logged in person.
+   * @param sfWebRequest $request
+   */
+  public function executeUpload(sfWebRequest $request)
   {
     
   }
