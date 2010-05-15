@@ -100,15 +100,23 @@ class defaultActions extends sfActions {
   {
     $file = $form->getValue('upload');
 
-    $filename = 'uploaded_'.$this->getUser()->getPersonId();
+    $personId = $this->getUser()->getPersonId();
+    $filename = 'uploaded_'.$personId;
     $extension = $file->getExtension($file->getOriginalExtension());
-    $fullFilePath = sfConfig::get('sf_upload_dir').'/ical/'.$filename.'.'.$extension;
+
+    $fullDir = sfConfig::get('sf_upload_dir').'/ical';
+    $fullFileName = $filename.'.'.$extension;
+    $fullFilePath = $fullDir.'/'.$fullFileName;
     $file->save($fullFilePath);
 
-    $fileContents = file_get_contents($fullFilePath);
+    //$fileContents = file_get_contents($fullFilePath);
+
+    $personId = $this->getUser()->getPersonId();
 
     Doctrine_Core::getTable('Event')
-      ->setEventsFromICal($fileContents);
+      ->setEventsFromICal($fullDir, $fullFileName, $personId);
+
+    
 
 
   }
