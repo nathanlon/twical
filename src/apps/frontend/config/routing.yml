@@ -5,6 +5,10 @@ authorised:
   url:   /authorised
   param: { module: default, action: twitterCallback }
 
+twitterLogin:
+  url:   /twlogin
+  param: { module: sfTwitterAuth, action: login }
+
 login:
   url:   /login
   param: { module: default, action: login }
