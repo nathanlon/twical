@@ -17,7 +17,7 @@
     <?php echo form_tag_for($form, '@person_modify') ?>
 
       <label><?php echo $form['upload']->renderLabel() ?></label>
-      <?php echo $form->render() ?>
+      <?php echo $form['upload']->render() ?>
       <input type="submit" value="Submit" />
     </form>
 
