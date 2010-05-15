@@ -96,6 +96,7 @@ class defaultActions extends sfActions {
       } else {
         //was a problem submitting.
         $this->isValid = 'false';
+        $this->errors = print_r($form->getErrorSchema()->getErrors(), true);
       }
     }
 
