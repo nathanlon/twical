@@ -14,7 +14,7 @@
 
     <p>Please look at your calendar settings pages OR upload a new calendar now</p>
 
-    <?php echo $form->renderFormTag('@upload') ?>
+    <?php echo $form->renderFormTag(url_for('@upload')) ?>
 
       <label><?php echo $form['upload']->renderLabel() ?></label>
       <?php echo $form['upload']->render() ?>
