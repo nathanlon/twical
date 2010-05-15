@@ -14,7 +14,7 @@
 
     <p>Please look at your calendar settings pages OR upload a new calendar now</p>
 
-    <?php echo form_tag_for($form, '@homepage') ?>
+    <?php echo form_tag_for($form, '@person_modify') ?>
 
 
       <?php echo $form ?>

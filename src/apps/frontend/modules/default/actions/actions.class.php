@@ -78,5 +78,9 @@ class defaultActions extends sfActions {
     }
   }
 
+  public function executePersonModify(sfWebRequest $request)
+  {
+    
+  }
 
 }
