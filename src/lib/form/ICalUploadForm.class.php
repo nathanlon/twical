@@ -13,7 +13,7 @@ class ICalUploadForm extends mySfForm
       'path'       => sfConfig::get('sf_upload_dir').'/ical'
     ));
 
-    
+    $this->widgetSchema->setNameFormat('upload[%s]');
   }
 
 

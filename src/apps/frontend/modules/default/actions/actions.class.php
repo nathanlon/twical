@@ -88,7 +88,7 @@ class defaultActions extends sfActions {
     {
       $form = new ICalUploadForm();
 
-      $form->bind($request->getParameterHolder()->getAll(), $request->getFiles($form->getName()));
+      $form->bind($request->getParameter('upload'), $request->getFiles('upload'));
       if ($form->isValid())
       {
         //put the contents of the file into a variable.
