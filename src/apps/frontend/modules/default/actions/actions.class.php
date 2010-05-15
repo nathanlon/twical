@@ -84,7 +84,22 @@ class defaultActions extends sfActions {
    */
   public function executeUpload(sfWebRequest $request)
   {
-    
+    if ($request->isMethod(sfWebRequest::POST))
+    {
+      $form = new ICalUploadForm();
+
+      $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
+      if ($form->isValid())
+      {
+        //put the contents of the file into a variable.
+        $this->isValid = 'true';
+      } else {
+        //was a problem submitting.
+        $this->isValid = 'false';
+      }
+    }
+
+    //$filePath =
   }
 
 }

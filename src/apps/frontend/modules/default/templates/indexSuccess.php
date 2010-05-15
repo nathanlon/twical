@@ -16,8 +16,16 @@
 
     <?php echo $form->renderFormTag(url_for('@upload')) ?>
 
+      <?php
+      if ($form->hasGlobalErrors()):
+        echo "Errors: " . $form->renderGlobalErrors();
+      endif;
+      ?>
+
+
       <label><?php echo $form['upload']->renderLabel() ?></label>
       <?php echo $form['upload']->render() ?>
+      <?php echo $form->renderHiddenFields() ?>
       <input type="submit" value="Submit" />
     </form>
 
