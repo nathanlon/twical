@@ -22,7 +22,7 @@
       endif;
       ?>
 
-
+      <p><?php echo $message ?></p>
       <label><?php echo $form['upload']->renderLabel() ?></label>
       <?php echo $form['upload']->render() ?>
       <?php echo $form->renderHiddenFields() ?>

@@ -23,9 +23,11 @@ class defaultActions extends sfActions {
         $this->form->bind($request->getParameter('calload'), $request->getFiles('calload'));
         if ($this->form->isValid())
         {
+          $this->message = "processing upload";
           $this->processUpload($this->form);
         } else {
           //there were errors.
+          $this->message = "Were errors in form: ".$form->renderGlobalErrors();
         }
       }
     }
