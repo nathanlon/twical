@@ -42,3 +42,9 @@ all:
 
     enabled_modules: [sfGuardAuth, sfTwitterAuth]
 
+  .actions:
+    login_module:           sfTwitterAuth   # To be called when a non-authenticated user
+    login_action:           login     # Tries to access a secure page
+
+    secure_module:          default   # To be called when a user doesn't have
+    secure_action:          secure    # The credentials required for an action

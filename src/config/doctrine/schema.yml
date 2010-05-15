@@ -10,14 +10,14 @@ Person:
     account_name:       { type: string(20) }
     calendar_url:       { type: string(1024) }
     sf_guard_user_id:            { type: integer(4) }
-  relations:
-    sfGuardUser:
-      class:            sfGuardUser
-      local:            sf_guard_user_id
-      foreign:          id
-      foreignAlias:     sfGuardUser
-      foreignType:      one
-      type:             one
+#  relations:
+#    sfGuardUser:
+#      class:            sfGuardUser
+#      local:            sf_guard_user_id
+#      foreign:          id
+#      foreignAlias:     sfGuardUser
+#      foreignType:      one
+#      type:             one
 
 
 Event:
