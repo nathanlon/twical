@@ -93,6 +93,7 @@ class defaultActions extends sfActions {
       {
         //put the contents of the file into a variable.
         $this->isValid = 'true';
+        $this->errors = "NO errors";
       } else {
         //was a problem submitting.
         $this->isValid = 'false';
