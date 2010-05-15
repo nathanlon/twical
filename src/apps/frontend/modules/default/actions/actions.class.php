@@ -46,10 +46,11 @@ class defaultActions extends sfActions {
       $q = Doctrine_Query::create()
         ->from('Person p')
         ->where('p.sf_guard_user_id = ?', $guardUserId);
-
+      //$q->getSqlQuery();
       $person = $q->fetchOne();
 
       $this->addedPerson = false;
+      $this->personSQLQuery = $q->getSqlQuery();
 
       if (is_null($person))
       {
