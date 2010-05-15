@@ -14,6 +14,9 @@ class defaultActions extends sfActions {
    if ($this->getUser()->isAuthenticated() == true)
    {
      $this->loggedIn = true;
+
+     $this->form = new ICalUploadForm();
+
    }
 
   }
@@ -71,7 +74,7 @@ class defaultActions extends sfActions {
 
       $this->personId = $personId;
 
-      //$this->redirect('@homepage');
+      $this->redirect('@homepage');
     }
   }
 
