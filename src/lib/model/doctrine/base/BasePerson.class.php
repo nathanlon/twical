@@ -13,7 +13,8 @@
  * @property string $account_name
  * @property string $calendar_url
  * @property integer $sf_guard_user_id
- * @property Doctrine_Collection $Event
+ * @property sfGuardUser $sfGuardUser
+ * @property Doctrine_Collection $Events
  * 
  * @method integer             getId()               Returns the current record's "id" value
  * @method boolean             getIsMuted()          Returns the current record's "is_muted" value
@@ -23,7 +24,8 @@
  * @method string              getAccountName()      Returns the current record's "account_name" value
  * @method string              getCalendarUrl()      Returns the current record's "calendar_url" value
  * @method integer             getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
- * @method Doctrine_Collection getEvent()            Returns the current record's "Event" collection
+ * @method sfGuardUser         getSfGuardUser()      Returns the current record's "sfGuardUser" value
+ * @method Doctrine_Collection getEvents()           Returns the current record's "Events" collection
  * @method Person              setId()               Sets the current record's "id" value
  * @method Person              setIsMuted()          Sets the current record's "is_muted" value
  * @method Person              setTwitterToken()     Sets the current record's "twitter_token" value
@@ -32,7 +34,8 @@
  * @method Person              setAccountName()      Sets the current record's "account_name" value
  * @method Person              setCalendarUrl()      Sets the current record's "calendar_url" value
  * @method Person              setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
- * @method Person              setEvent()            Sets the current record's "Event" collection
+ * @method Person              setSfGuardUser()      Sets the current record's "sfGuardUser" value
+ * @method Person              setEvents()           Sets the current record's "Events" collection
  * 
  * @package    twical
  * @subpackage model
@@ -82,7 +85,11 @@ abstract class BasePerson extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('Event', array(
+        $this->hasOne('sfGuardUser', array(
+             'local' => 'sf_guard_user_id',
+             'foreign' => 'id'));
+
+        $this->hasMany('Event as Events', array(
              'local' => 'id',
              'foreign' => 'person_id'));
 
