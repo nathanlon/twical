@@ -30,8 +30,11 @@ class defaultActions extends sfActions {
   {
     $user = $this->getUser();
 
+    $this->isAuthenticated = false;
+
     if ($user->isAuthenticated() == true)
     {
+      $this->isAuthenticated = true;
 
       $guardUser = $user->getGuardUser();
       $guardUserId = $guardUser->getId();
@@ -46,6 +49,8 @@ class defaultActions extends sfActions {
 
       $person = $q->fetchOne();
 
+      $this->addedPerson = false;
+
       if (is_null($person))
       {
         $person = new Person();
@@ -53,9 +58,10 @@ class defaultActions extends sfActions {
         $person->setTwitterToken($token);
         $person->setTwitterSecret($secret);
         $person->save();
+        $this->addedPerson = true;
       }
 
-      $this->redirect('@homepage');
+      //$this->redirect('@homepage');
     }
   }
 
