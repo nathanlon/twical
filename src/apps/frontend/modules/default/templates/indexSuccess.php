@@ -17,7 +17,7 @@
     <?php echo form_tag_for($form, '@homepage') ?>
 
 
-      <?php echo $form; ?>
+      <?php echo $form ?>
       <input type="submit" value="Submit" />
     </form>
 

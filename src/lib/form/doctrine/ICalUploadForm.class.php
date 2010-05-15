@@ -1,6 +1,6 @@
 <?php
 
-class ICalUploadForm extends sfForm
+class ICalUploadForm extends sfFormObject
 {
 
   public function configure()
