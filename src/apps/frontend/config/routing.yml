@@ -5,14 +5,6 @@ authorised:
   url:   /authorised
   param: { module: default, action: twitterCallback }
 
-login:
-  url:   /login
-  param: { module: default, action: login }
-
-load_data:
-  url:   /secure
-  param: { module: default, action: secureHome }
-
 sf_guard_signin:
   url:   /login
   param: { module: sfGuardAuth, action: signin }
@@ -25,20 +17,7 @@ sf_guard_password:
   url:   /request_password
   param: { module: sfGuardAuth, action: password }
 
-account:
-  url: /account
-  param: { module: account, action: connect }
-
 # default rules
 homepage:
   url:   /
   param: { module: default, action: index }
-
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-default:
-  url:   /:module/:action/*
