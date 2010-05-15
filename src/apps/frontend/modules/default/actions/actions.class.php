@@ -49,8 +49,15 @@ class defaultActions extends sfActions {
       //$q->getSqlQuery();
       $person = $q->fetchOne();
 
+      $personTable = Doctrine_Core::getTable('Person');
+
+      $person = $personTable->findOneBy('sf_guard_user_id', $guardUserId);
+
+      $this->personDetail = $person;
+
+
       $this->addedPerson = false;
-      $this->personSQLQuery = "GuardUserID=$guardUserId " . $q->getSqlQuery() . "params = " . print_r($q->getParams(), true);
+      $this->personSQLQuery = "GuardUserID=$guardUserId " . $q->getSqlQuery();// . "params = " . print_r($q->getParams(), true);
 
       if (is_null($person))
       {
