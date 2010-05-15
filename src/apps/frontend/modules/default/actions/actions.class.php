@@ -50,7 +50,7 @@ class defaultActions extends sfActions {
       $person = $q->fetchOne();
 
       $this->addedPerson = false;
-      $this->personSQLQuery = "GuardUserID=$guardUserId " . $q->getSqlQuery();
+      $this->personSQLQuery = "GuardUserID=$guardUserId " . $q->getSqlQuery() . "params = " . print_r($q->getParams(), true);
 
       if (is_null($person))
       {
