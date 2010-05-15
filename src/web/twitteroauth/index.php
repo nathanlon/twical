@@ -21,16 +21,16 @@ $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oau
 
 /* If method is set change API call made. Test is called by default. */
 $content = $connection->get('account/verify_credentials');
-$url="http://api.twitter.com/version/friends/ids.json";
+$url="http://api.twitter.com/version/statuses/update.json";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, $access_token['oauth_token'].":".$access_token['oauth_token_secret']);
-curl_setopt($ch, CURLOPT_POSTFIELDS, "status=event is no here at ...");
+curl_setopt($ch, CURLOPT_USERPWD, "bandfreakshow:sp1ritbit");
+curl_setopt($ch, CURLOPT_POSTFIELDS, "status=WarbleCamp at The Guardian offices #twical");
 curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 $data = curl_exec ($ch);
 curl_close ($ch);
-print_r( $data);
+//print_r( $data);
 
 require_once ('MDB2.php');
 
