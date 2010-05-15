@@ -14,7 +14,7 @@
 
     <p>Please look at your calendar settings pages OR upload a new calendar now</p>
 
-    <?php echo $form->renderFormTag(url_for('@upload')) ?>
+    <?php echo $form->renderFormTag(url_for('@homepage')) ?>
 
       <?php
       if ($form->hasGlobalErrors()):

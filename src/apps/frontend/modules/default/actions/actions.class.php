@@ -17,19 +17,18 @@ class defaultActions extends sfActions {
 
       $this->form = new ICalUploadForm();
 
+      //if it was a post, we may have just uploaded something.
       if ($request->isMethod(sfWebRequest::POST))
       {
-        $form->bind($request->getParameter('calload'), $request->getFiles('calload'));
-        if ($form->isValid())
+        $this->form->bind($request->getParameter('calload'), $request->getFiles('calload'));
+        if ($this->form->isValid())
         {
-          $this->processUpload($form);
+          $this->processUpload($this->form);
         } else {
           //there were errors.
         }
       }
-
-
-   }
+    }
 
   }
 
