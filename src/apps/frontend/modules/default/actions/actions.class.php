@@ -45,7 +45,7 @@ class defaultActions extends sfActions {
       //look for a person with this guard user id already.
       $q = Doctrine_Query::create()
         ->from('Person p')
-        ->where('p.sf_guard_user_id = ?', $guardUserId);
+        ->where('p.sfGuardUser = ?', $guardUserId);
       //$q->getSqlQuery();
       $person = $q->fetchOne();
 
