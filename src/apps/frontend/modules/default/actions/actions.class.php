@@ -53,9 +53,6 @@ class defaultActions extends sfActions {
 
       $person = $personTable->findOneBy('sf_guard_user_id', $guardUserId);
 
-      $this->personDetail = $person;
-
-
       $this->addedPerson = false;
       $this->personSQLQuery = "GuardUserID=$guardUserId " . $q->getSqlQuery();// . "params = " . print_r($q->getParams(), true);
 
@@ -69,9 +66,12 @@ class defaultActions extends sfActions {
         $this->addedPerson = true;
       }
 
-      $user->setPersonId($person->getId());
+      $personId = $person->getId();
+      $user->setPersonId($personId);
 
-      $this->redirect('@homepage');
+      $this->personId = $personId;
+
+      //$this->redirect('@homepage');
     }
   }
 
