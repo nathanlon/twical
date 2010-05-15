@@ -5,6 +5,10 @@ authorised:
   url:   /authorised
   param: { module: default, action: twitterCallback }
 
+login:
+  url:   /login
+  param: { module: default, action: login }
+
 sf_guard_signin:
   url:   /login
   param: { module: sfGuardAuth, action: signin }

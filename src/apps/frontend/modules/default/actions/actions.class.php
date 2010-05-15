@@ -18,6 +18,11 @@ class defaultActions extends sfActions {
 
   }
 
+  public function executeLogin(sfWebRequest $request)
+  {
+    
+  }
+
   /**
    * Create the person or find it.
    */
