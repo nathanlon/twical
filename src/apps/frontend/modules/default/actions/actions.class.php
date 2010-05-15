@@ -105,7 +105,7 @@ class defaultActions extends sfActions {
     $extension = $file->getExtension($file->getOriginalExtension());
 
     $fullDir = sfConfig::get('sf_upload_dir').'/ical';
-    $fullFileName = $filename.'.'.$extension;
+    $fullFileName = $filename.$extension;
     $fullFilePath = $fullDir.'/'.$fullFileName;
     $file->save($fullFilePath);
 
