@@ -4,4 +4,4 @@
 
 <p><?php echo "Query = ".$personSQLQuery ?></p>
 
-<p><?php echo "Person is ".$personDetail ?></p>
+<p><?php echo "Person is ".print_r($personDetail, true) ?></p>
