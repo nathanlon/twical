@@ -8,14 +8,26 @@ class defaultActions extends sfActions {
    */
   public function executeIndex(sfWebRequest $request)
   {
-   $this->test_token =  $this->getUser()->getAttribute('oauth_token');
-   
-   $this->loggedIn = false;
-   if ($this->getUser()->isAuthenticated() == true)
-   {
-     $this->loggedIn = true;
+    $this->test_token =  $this->getUser()->getAttribute('oauth_token');
 
-     $this->form = new ICalUploadForm();
+    $this->loggedIn = false;
+    if ($this->getUser()->isAuthenticated() == true)
+    {
+      $this->loggedIn = true;
+
+      $this->form = new ICalUploadForm();
+
+      if ($request->isMethod(sfWebRequest::POST))
+      {
+        $form->bind($request->getParameter('calload'), $request->getFiles('calload'));
+        if ($form->isValid())
+        {
+          $this->processUpload($form);
+        } else {
+          //there were errors.
+        }
+      }
+
 
    }
 
@@ -82,26 +94,14 @@ class defaultActions extends sfActions {
    * Receives the uploaded file and processes it as events for the logged in person.
    * @param sfWebRequest $request
    */
-  public function executeUpload(sfWebRequest $request)
+  private function processUpload(& $form)
   {
-    if ($request->isMethod(sfWebRequest::POST))
-    {
-      $form = new ICalUploadForm();
+    $file = $form->getValue('upload');
 
-      $form->bind($request->getParameter('calload'), $request->getFiles('calload'));
-      if ($form->isValid())
-      {
-        //put the contents of the file into a variable.
-        $this->isValid = 'true';
-        $this->errors = "NO errors";
-      } else {
-        //was a problem submitting.
-        $this->isValid = 'false';
-        $this->errors = $form->renderGlobalErrors();
-      }
-    }
+    $filename = 'uploaded_'.$this->getUser()->getPersonId();
+    $extension = $file->getExtension($file->getOriginalExtension());
+    $file->save(sfConfig::get('sf_upload_dir').'/ical/'.$filename.$extension);
 
-    //$filePath =
   }
 
 }
