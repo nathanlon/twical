@@ -9,9 +9,10 @@
 <div id="introbox">TwiCal allows you upload your own calendar schedules and receive reminders via twitter for upcoming events , with the goal to use geo lookups as well. The service will allow granular control to the user.</div>
 
 <?php if ($loggedIn): ?>
-<div class="loggedIn">You are logged in
+<div class="loggedIn">
+  <p>You are logged in</p>
 
-<p>Please look at your calendar settings pages OR upload a new calendar now</p>
+  <p>Please look at your calendar settings pages OR upload a new calendar now</p>
 </div>
 <?php else: ?>
 <div class="logIn">

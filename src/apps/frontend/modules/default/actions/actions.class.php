@@ -14,7 +14,6 @@ class defaultActions extends sfActions {
    if ($this->getUser()->isAuthenticated() == true)
    {
      $this->loggedIn = true;
-     $this->redirect('default/secureHome');
    }
 
   }
@@ -51,39 +50,9 @@ class defaultActions extends sfActions {
         $person->save();
       }
 
-      $this->redirect('default/secureHome');
+      $this->redirect('@homepage');
     }
   }
 
-  /**
-   * User is immediately taken to twitter as this page is secure.
-   * @param sfWebRequest $request
-   */
-  public function executeLogin(sfWebRequest $request)
-  {
-    //if we get here, we are logged in. Forward to secure area.
 
-    //$this->forward('default', 'index');
-  }
-
-  public function executeSecureHome(sfWebRequest $request)
-  {
-    //Create a person mapping to sf_guard_user
-    if ($this->getUser()->isAuthenticated() == true)
-    {
-      if ($request->isMethod(sfWebRequest::POST))
-      {
-        //create the person against the user.
-        $person = new Person();
-        $person->setSfGuardUserId($guardUserId);
-        //no save.
-      }
-    }
-
-  }
-
-  public function executeUserPage(sfWebRequest $request)
-  {
-      // where the user goes into their own page space
-  }
 }
