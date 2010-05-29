@@ -10,5 +10,6 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfDoctrinePlugin');
     $this->enablePlugins('sfDoctrineGuardPlugin');
     $this->enablePlugins('sfTwitterAuthPlugin');
+    $this->enablePlugins('sfPHPUnit2Plugin');
   }
 }

@@ -15,3 +15,27 @@
 #     password: changeme
 #     name:     Kris Wallsmith
 #     email:    kris.wallsmith@symfony-project.com
+
+SfGuardUser:
+  first_user:
+    username:       nathanlon
+    algorithm:      sha1
+    salt:           6b90973c40dcb07dd23999fceb31ac41
+    password:       dfe09cd7de51c1d920ca6f09345084e038b6db16
+    is_active:      true
+    is_super_admin: false
+
+Person:
+  first_person:
+    twitter_token:      6104102-40gvoEtj8NTzXIohCNIdPUaQlveKTyasyOr6HLg
+    twitter_secret:     BZixeZiRKONwcIK4NwsMIrf7NXySsgh2rS13r71JIOI
+    sfGuardUser:        [first_user]
+
+#Event needs to be starting 4 minutes before now, and ending 4 minutes after now.
+Event:
+  first_event:
+    name:                      Test event
+    description:               A test event
+    start_time:                "<?php echo date('Y-m-d H:i:s', (time()-(60*4))) ?>"
+    end_time:                  "<?php echo date('Y-m-d H:i:s', (time()+(60*4))) ?>"
+    Person:                    [first_person]

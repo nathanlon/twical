@@ -24,15 +24,14 @@ class defaultActions extends sfActions {
         $this->form->bind($request->getParameter('calload'), $request->getFiles('calload'));
         if ($this->form->isValid())
         {
-          $this->message = "processing upload";
+          $this->message = $this->eventCount . " events were loaded.";
           $this->processUpload($this->form);
         } else {
           //there were errors.
-          $this->message = "Were errors in form: ".$form->renderGlobalErrors();
+          $this->message = "Errors: ".$form->renderGlobalErrors();
         }
       }
     }
-
   }
 
   public function executeLogin(sfWebRequest $request)
@@ -63,7 +62,6 @@ class defaultActions extends sfActions {
       $q = Doctrine_Query::create()
         ->from('Person p')
         ->where('p.sf_guard_user_id = ?', $guardUserId);
-      //$q->getSqlQuery();
       $person = $q->fetchOne();
 
       $personTable = Doctrine_Core::getTable('Person');
@@ -98,26 +96,27 @@ class defaultActions extends sfActions {
    */
   private function processUpload(& $form)
   {
+    $user = $this->getUser();
+    $personId = $user->getPersonId();
+
+    //get the file from the upload.
     $file = $form->getValue('upload');
 
-    $personId = $this->getUser()->getPersonId();
-    $filename = 'uploaded_'.$personId;
+    //get the extension and set the file name based on person logged in.
     $extension = $file->getExtension($file->getOriginalExtension());
+    $filename = 'uploaded_'.$personId;
 
+    //save the file on disk, for reading next.
     $fullDir = sfConfig::get('sf_upload_dir').'/ical';
     $fullFileName = $filename.$extension;
     $fullFilePath = $fullDir.'/'.$fullFileName;
     $file->save($fullFilePath);
 
-    //$fileContents = file_get_contents($fullFilePath);
-
-    $personId = $this->getUser()->getPersonId();
-
-    Doctrine_Core::getTable('Event')
+    //after the file has been saved, go and read it into the events table.
+    $this->eventCount = EventTable::getInstance()
       ->setEventsFromICal($fullDir, $fullFileName, $personId);
 
-    
-
+    // We should probably remove the file here.
 
   }
 

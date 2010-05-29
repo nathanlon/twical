@@ -116,3 +116,179 @@ May 15 11:41:17 symfony [info] {sfWebDebugLogger} Configuration 2.23 ms (8)
 May 15 11:41:17 symfony [info] {sfWebDebugLogger} Factories 13.96 ms (1)
 May 15 11:41:17 symfony [info] {sfWebDebugLogger} Action "sfTwitterAuth/login" 7.36 ms (1)
 May 15 11:41:17 symfony [info] {sfWebResponse} Send content (119 o)
+May 15 20:09:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 15 20:09:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 15 20:09:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 15 20:09:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 15 20:09:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 20:09:36 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 15 20:09:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 20:09:36 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 15 20:09:36 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 15 20:09:37 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 15 20:09:37 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 15 20:09:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 20:09:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 20:09:37 symfony [info] {sfWebDebugLogger} Configuration 123.79 ms (10)
+May 15 20:09:37 symfony [info] {sfWebDebugLogger} Factories 203.80 ms (1)
+May 15 20:09:37 symfony [info] {sfWebDebugLogger} Action "default/index" 0.30 ms (1)
+May 15 20:09:37 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 35.31 ms (1)
+May 15 20:09:37 symfony [info] {sfWebResponse} Send content (58216 o)
+May 15 20:10:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 15 20:10:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 15 20:10:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 15 20:10:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 15 20:10:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 20:10:57 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 15 20:10:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 20:10:57 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 15 20:10:57 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 15 20:10:57 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 15 20:10:57 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 15 20:10:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 15 20:10:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 20:10:57 symfony [info] {sfWebDebugLogger} Configuration 283.84 ms (9)
+May 15 20:10:57 symfony [info] {sfWebDebugLogger} Factories 140.87 ms (1)
+May 15 20:10:57 symfony [info] {sfWebDebugLogger} Action "default/index" 0.33 ms (1)
+May 15 20:10:57 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 13.74 ms (1)
+May 15 20:10:57 symfony [info] {sfWebResponse} Send content (58798 o)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 20:11:01 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 15 20:11:01 symfony [info] {sfFrontWebController} Redirect to "http://www.twicaltest.net/frontend_dev.php/twlogin"
+May 15 20:11:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 15 20:11:01 symfony [info] {sfWebResponse} Send header "Location: http://www.twicaltest.net/frontend_dev.php/twlogin"
+May 15 20:11:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 20:11:01 symfony [info] {sfWebDebugLogger} Configuration 19.11 ms (9)
+May 15 20:11:01 symfony [info] {sfWebDebugLogger} Factories 12.63 ms (1)
+May 15 20:11:01 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 24.77 ms (1)
+May 15 20:11:01 symfony [info] {sfWebResponse} Send content (121 o)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 15 20:11:01 symfony [info] {sfPatternRouting} Match route "twitterLogin" (/twlogin) for /twlogin with parameters array (  'module' => 'sfTwitterAuth',  'action' => 'login',)
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 15 20:11:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 15 20:11:01 symfony [info] {sfTwitterAuthActions} Call "sfTwitterAuthActions->executeLogin()"
+May 15 20:11:01 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php on line 72 (Undefined index:  oauth_token)
+May 15 20:11:01 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php on line 72 (Undefined index:  oauth_token_secret)
+May 15 20:11:01 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/modules/sfTwitterAuth/actions/actions.class.php on line 40 (Undefined index:  oauth_token)
+May 15 20:11:01 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/modules/sfTwitterAuth/actions/actions.class.php on line 41 (Undefined index:  oauth_token_secret)
+May 15 20:11:01 symfony [info] {sfFrontWebController} Redirect to "https://twitter.com/oauth/authorize?oauth_token="
+May 15 20:11:01 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 15 20:11:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 15 20:11:01 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 15 20:11:01 symfony [info] {sfWebResponse} Send header "Location: https://twitter.com/oauth/authorize?oauth_token="
+May 15 20:11:01 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 15 20:11:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 15 20:11:02 symfony [info] {sfWebDebugLogger} Configuration 16.07 ms (9)
+May 15 20:11:02 symfony [info] {sfWebDebugLogger} Factories 10.54 ms (1)
+May 15 20:11:02 symfony [info] {sfWebDebugLogger} Action "sfTwitterAuth/login" 17.05 ms (1)
+May 15 20:11:02 symfony [info] {sfWebResponse} Send content (119 o)
+May 28 14:34:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 28 14:34:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 28 14:34:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 28 14:34:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+May 28 14:34:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 28 14:34:13 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 28 14:34:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 28 14:34:13 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+May 28 14:34:13 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/modules/default/templates/indexSuccess.php"
+May 28 14:34:13 symfony [info] {sfPHPView} Decorate content with "/work/twical/src/apps/frontend/templates/layout.php"
+May 28 14:34:13 symfony [info] {sfPHPView} Render "/work/twical/src/apps/frontend/templates/layout.php"
+May 28 14:34:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 28 14:34:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 28 14:34:13 symfony [info] {sfWebDebugLogger} Configuration 3.78 ms (9)
+May 28 14:34:13 symfony [info] {sfWebDebugLogger} Factories 363.73 ms (1)
+May 28 14:34:13 symfony [info] {sfWebDebugLogger} Action "default/index" 0.33 ms (1)
+May 28 14:34:13 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 110.28 ms (1)
+May 28 14:34:13 symfony [info] {sfWebResponse} Send content (58248 o)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 28 14:35:26 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 28 14:35:26 symfony [info] {sfFrontWebController} Redirect to "http://www.twicaltest.net/frontend_dev.php/twlogin"
+May 28 14:35:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 28 14:35:26 symfony [info] {sfWebResponse} Send header "Location: http://www.twicaltest.net/frontend_dev.php/twlogin"
+May 28 14:35:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 28 14:35:26 symfony [info] {sfWebDebugLogger} Configuration 2.62 ms (8)
+May 28 14:35:26 symfony [info] {sfWebDebugLogger} Factories 11.29 ms (1)
+May 28 14:35:26 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 100.79 ms (1)
+May 28 14:35:26 symfony [info] {sfWebResponse} Send content (121 o)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 28 14:35:26 symfony [info] {sfPatternRouting} Match route "twitterLogin" (/twlogin) for /twlogin with parameters array (  'module' => 'sfTwitterAuth',  'action' => 'login',)
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 28 14:35:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 28 14:35:26 symfony [info] {sfTwitterAuthActions} Call "sfTwitterAuthActions->executeLogin()"
+May 28 14:35:26 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php on line 72 (Undefined index:  oauth_token)
+May 28 14:35:26 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php on line 72 (Undefined index:  oauth_token_secret)
+May 28 14:35:26 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/modules/sfTwitterAuth/actions/actions.class.php on line 40 (Undefined index:  oauth_token)
+May 28 14:35:26 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/modules/sfTwitterAuth/actions/actions.class.php on line 41 (Undefined index:  oauth_token_secret)
+May 28 14:35:26 symfony [info] {sfFrontWebController} Redirect to "https://twitter.com/oauth/authorize?oauth_token="
+May 28 14:35:26 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 28 14:35:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 28 14:35:26 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 28 14:35:26 symfony [info] {sfWebResponse} Send header "Location: https://twitter.com/oauth/authorize?oauth_token="
+May 28 14:35:26 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 28 14:35:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 28 14:35:26 symfony [info] {sfWebDebugLogger} Configuration 2.65 ms (8)
+May 28 14:35:26 symfony [info] {sfWebDebugLogger} Factories 9.38 ms (1)
+May 28 14:35:26 symfony [info] {sfWebDebugLogger} Action "sfTwitterAuth/login" 43.08 ms (1)
+May 28 14:35:26 symfony [info] {sfWebResponse} Send content (119 o)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Match route "sf_guard_signin" (/login) for /login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+May 29 20:17:03 symfony [info] {myUser} Automatic user logout due to timeout
+May 29 20:17:03 symfony [info] {myUser} User is not authenticated
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:17:03 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 29 20:17:03 symfony [info] {sfFrontWebController} Redirect to "http://www.twicaltest.net/frontend_dev.php/twlogin"
+May 29 20:17:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 29 20:17:03 symfony [info] {sfWebResponse} Send header "Location: http://www.twicaltest.net/frontend_dev.php/twlogin"
+May 29 20:17:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:17:03 symfony [info] {sfWebDebugLogger} Configuration 2.25 ms (8)
+May 29 20:17:03 symfony [info] {sfWebDebugLogger} Factories 13.76 ms (1)
+May 29 20:17:03 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 5.96 ms (1)
+May 29 20:17:03 symfony [info] {sfWebResponse} Send content (121 o)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 29 20:17:03 symfony [info] {sfPatternRouting} Match route "twitterLogin" (/twlogin) for /twlogin with parameters array (  'module' => 'sfTwitterAuth',  'action' => 'login',)
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 29 20:17:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 29 20:17:03 symfony [info] {sfTwitterAuthActions} Call "sfTwitterAuthActions->executeLogin()"
+May 29 20:17:03 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php on line 72 (Undefined index:  oauth_token)
+May 29 20:17:03 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php on line 72 (Undefined index:  oauth_token_secret)
+May 29 20:17:03 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/modules/sfTwitterAuth/actions/actions.class.php on line 40 (Undefined index:  oauth_token)
+May 29 20:17:03 symfony [notice] {sfWebDebugLogger}  Notice at /work/twical/src/plugins/sfTwitterAuthPlugin/modules/sfTwitterAuth/actions/actions.class.php on line 41 (Undefined index:  oauth_token_secret)
+May 29 20:17:03 symfony [info] {sfFrontWebController} Redirect to "https://twitter.com/oauth/authorize?oauth_token="
+May 29 20:17:03 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 29 20:17:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+May 29 20:17:03 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 29 20:17:03 symfony [info] {sfWebResponse} Send header "Location: https://twitter.com/oauth/authorize?oauth_token="
+May 29 20:17:03 symfony [warning] {sfWebDebugLogger}  Warning at /work/twical/src/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /work/twical/src/plugins/sfTwitterAuthPlugin/lib/vendor/twitteroauth/TwitterOAuth.php:72))
+May 29 20:17:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 29 20:17:03 symfony [info] {sfWebDebugLogger} Configuration 2.17 ms (8)
+May 29 20:17:03 symfony [info] {sfWebDebugLogger} Factories 9.36 ms (1)
+May 29 20:17:03 symfony [info] {sfWebDebugLogger} Action "sfTwitterAuth/login" 6.86 ms (1)
+May 29 20:17:03 symfony [info] {sfWebResponse} Send content (119 o)
